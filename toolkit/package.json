@@ -1,0 +1,16 @@
+{
+  "name": "genesis-ig-reels-toolkit",
+  "version": "1.0.0",
+  "description": "Silent Tamil CNC reel renderer (HTML/SVG -> Playwright -> ffmpeg)",
+  "scripts": {},
+  "keywords": [],
+  "author": "Johnny Paul",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/noto-sans": "^5.3.0",
+    "@fontsource/noto-sans-tamil": "^5.3.0"
+  },
+  "private": true
+}

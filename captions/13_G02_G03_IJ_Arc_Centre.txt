@@ -1,0 +1,7 @@
+G02/G03-ல் I, J எங்கிருந்து அளக்கப்படுகிறது? (Haas mill உதாரணம்)
+
+Haas mill-ல் I, J என்பது arc-ன் start point-லிருந்து centre வரை உள்ள தூரம் (G17-ல் I = X திசை, J = Y திசை). உதாரணம்: X40 Y0-லிருந்து X0 Y40 வரை, centre X0 Y0 என்றால் G03 X0. Y40. I-40. J0. Full circle-க்கு R அல்ல, I/J பயன்படுத்த வேண்டும். சில control-களில் absolute arc-centre mode உண்டு; உங்கள் machine manual-ஐப் பாருங்கள். VMC operator, CNC programmer இருவருக்கும் பயன்படும்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#CNCProgramming #VMCOperator #GCode

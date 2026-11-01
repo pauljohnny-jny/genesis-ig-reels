@@ -1,0 +1,7 @@
+Toolholder runout: ஒரு cutting edge மட்டும் விரைவாகத் தேய்கிறதா?
+
+BIG DAISHOWA விளக்கத்தின்படி, runout இருந்தால் ஒரு edge அதிக load-ஐ எடுத்து சீரற்ற தேய்மானம் ஏற்படும். Dial indicator-ஆல் holder nose, shank நடு, tool tip ஆகிய மூன்று இடங்களிலும், spindle-ஐ ஒரு முழு சுற்று சுழற்றி TIR (அதிகம் − குறைவு) அளந்து ஒப்பிடுங்கள். அனுமதிக்கப்பட்ட அளவு manufacturer spec-ஐப் பொறுத்தது; ஒரே பொது எண் இல்லை. VMC operator-களுக்குப் பயனுள்ள சோதனை.
+
+இந்த reel-ஐ உங்கள் shop நண்பருக்கு அனுப்புங்கள்.
+
+#CNCMachining #VMCOperator #CNCTooling
