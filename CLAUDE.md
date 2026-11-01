@@ -9,7 +9,10 @@ Claude manages production and, with approval, publishing. ChatGPT is the auditor
 3. **Education by default.** Never state or imply an opening, employer, salary, deductions, visa outcome, deadline or selection guarantee. No client names, proprietary drawings or candidate details. Never ask for personal details in comments; never invent a contact number.
 4. **Accuracy.** Verify every teaching point against manufacturer or official documentation before production. Label controller-specific code ("Haas mill example"). No universal tolerances. Turning: workpiece rotates, tool feeds. Milling: cutter rotates, relative feed between cutter and workpiece. Don't say the tool or job "never moves".
 5. **Provenance.** Keep content credentials and AI disclosures. Don't strip metadata, don't re-encode an approved file, don't use detection-evasion tools.
-6. **Public repo.** Store only final reels, captions and toolkit. Analytics, enquiry counts, approvals and internal notes stay in the private claude.ai Project (claude/publication-log.md).
+6. **Public repo.** Store only the toolkit, reel specs, captions, PLAN.md and approved MP4s (an MP4 goes into `reels/` only after approval). Analytics, enquiry counts, approvals and internal notes stay in the private claude.ai Project (claude/publication-log.md).
+
+## Daily run (scheduled, 07:07 IST)
+Prepare the **next day's** two reels: next two `queued` IDs in PLAN.md → verify sources → spec in `toolkit/specs/` → render → QC → caption. Commit specs, captions and PLAN.md (status `draft`), never the MP4. If two or more drafts are already awaiting approval, don't make more – re-send those. Then list new comments on our own reels and draft replies (don't post). Send Johnny one message: files, captions with English meaning, proposed times (09:00 and 19:30 IST next day), reply drafts. After he approves in that session, set wake-ups for the approved times and publish then.
 
 ## Reel format
 Silent vertical motion graphics, 1080×1920, 20–35 s, Tamil text with English shop-floor terms. Five scenes: hook question → explanation → worked example/check → interview takeaway → one CTA (save, or send to a friend). Text stays within y 230–1440 and x ≤ 850.
