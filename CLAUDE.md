@@ -16,7 +16,7 @@ Prepare the **next day's** two reels: next two `queued` IDs in PLAN.md → verif
 
 ## Reel format
 Silent vertical motion graphics, 1080×1920, 20–35 s, Tamil text with English shop-floor terms. Five scenes: hook question → explanation → worked example/check → interview takeaway → one CTA (save, or send to a friend).
-**Hook first (Johnny, 2 Nov 2026; applies from reels 17+).** Every reel opens on a hook that is fully visible at 0.0 s (no fade-in): one bold line of at most ~6 words that names a common mistake, a surprising number or a direct challenge (e.g. "இந்த 0.5 mm-ஐ பலர் தவறவிடுகிறார்கள்", "Interview-ல் 80% பேர் தவறு செய்யும் கேள்வி" only if the figure is sourced). Hold it at least 1.5 s before the explanation starts. The hook must be true and backed by the reel's content: no clickbait, no job, salary, visa or selection hooks. Caption line 1 opens with the same hook, then the topic. Text stays within y 230–1440 and x ≤ 850.
+**Hook first (Johnny, 2 Nov 2026; applies from reels 17+).** Every reel opens on a hook that is fully visible at 0.0 s (no fade-in): one bold line of at most ~6 words that names a common mistake, a surprising number or a direct challenge (e.g. "இந்த 0.5 mm-ஐ தவறவிடாதீர்கள்"; any number in a hook must be sourced). Hold it at least 1.5 s before the explanation starts. The hook must be true and backed by the reel's content: no clickbait, no job, salary, visa or selection hooks. Caption line 1 opens with the same hook, then the topic. Text stays within y 230–1440 and x ≤ 850.
 
 ## Caption format
 Topic in line 1; one useful added detail; assumptions stated (e.g. metric G94, single-start thread); "VMC operator" in the text; one CTA; at most 3 specific hashtags.
