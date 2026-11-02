@@ -20,12 +20,12 @@ Number = reel ID used in file names. Update this file in the same commit as any 
 | 12 | Caliper: resolution vs accuracy | live |
 | 13 | G02/G03 I, J arc centre (Haas mill example) | approved – 2 Nov 09:00 IST |
 | 14 | Toolholder runout (TIR) | approved – 2 Nov 19:30 IST |
+| 15 | Reading a metric micrometer | draft – proposed 3 Nov 09:00 IST |
+| 16 | Thermal drift: morning vs afternoon part | draft – proposed 3 Nov 19:30 IST |
 
 ## Queue (take from the top; verify each teaching point with the named source first)
 | ID | Topic | Lesson (no universal tolerances) | Source to verify | CTA |
 |---|---|---|---|---|
-| 15 | Reading a metric micrometer | Worked 0.01 mm example; scale layout varies by model | Mitutoyo / manufacturer manual | SAVE |
-| 16 | Thermal drift: morning vs afternoon part | Spindle, cutting and ambient heat shift size over a run; follow the machine's warm-up/compensation procedure | Okuma Thermo-Friendly paper; machine manuals | SAVE |
 | 17 | G90 vs G91 | Absolute vs incremental; a forgotten G91 makes later moves relative (Haas mill example) | Haas / Productivity training manual | SEND |
 | 18 | 0.01 mm = ? µm | 0.01 mm = 10 µm; 0.010 is the same value to 3 decimals | SI | SAVE |
 | 19 | Reading a metric vernier caliper | Main scale + coinciding vernier line × graduation (model-specific) | Mitutoyo | SAVE |

@@ -1,0 +1,7 @@
+Thermal drift: காலையில் OK, மதியம் size மாறுவது ஏன்?
+
+Okuma விளக்கத்தின்படி, machine-ன் சொந்த வெப்பம், வெட்டும் வெப்பம், சுற்றுப்புற வெப்பநிலை மூன்றும் நீண்ட run-ல் accuracy-ஐ மாற்றலாம். Reel-ல் உள்ள கணக்கு உதாரணம் மட்டுமே: 100 mm steel part, 20 °C-ஐ விட 10 °C அதிகம், α ≈ 10.5 × 10⁻⁶/°C (பெரும்பாலான steel-களுக்கு Mitutoyo தரும் தோராய மதிப்பு) என்றால் சுமார் 0.01 mm. Material, part அளவு, machine-க்கு ஏற்ப இது மாறும். அளவீட்டுக்கான reference வெப்பநிலை 20 °C (ISO 1). Machine-ன் warm-up, compensation procedure-ஐயும், offset மாற்றத்துக்கு shop procedure-ஐயும் பின்பற்றுங்கள். VMC operator-கள் tool wear-ஐயும் சேர்த்துச் சோதிக்க வேண்டும்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCMachining #PrecisionMeasurement

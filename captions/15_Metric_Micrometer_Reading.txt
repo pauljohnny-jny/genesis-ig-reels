@@ -1,0 +1,9 @@
+Micrometer reading: 7.37 mm-ஆ, 7.87 mm-ஆ? (0.01 mm metric micrometer)
+
+Thimble ஒரு முழுச் சுற்று spindle-ஐ 0.5 mm நகர்த்தும்; அதில் 50 பிரிவுகள், அதனால் ஒரு பிரிவு 0.01 mm. Sleeve-ல் கடைசியாகத் தெரியும் mm கோடு + (தெரிந்தால்) 0.5 mm கோடு + datum line-ல் உள்ள thimble பிரிவு = reading. இது standard 0.01 mm outside micrometer உதாரணம்; vernier (0.001 mm), digital model-களில் படிக்கும் முறை வேறு. அளக்கும் முன் zero check செய்து, ratchet அல்லது friction thimble மூலம் ஒரே அளவு force கொடுங்கள். VMC operator interview-ல் இந்த நான்கு படிகளைச் சொல்லிக் காட்டலாம்.
+
+ஆதாரம்: Mitutoyo Quick Guide to Precision Measuring Instruments.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #PrecisionMeasurement #CNCMachining
