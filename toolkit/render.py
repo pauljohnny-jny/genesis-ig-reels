@@ -33,7 +33,7 @@ with sync_playwright() as p:
             t = sc["e"] - 0.35 if k < len(reel["scenes"]) - 1 else sc["e"] - 0.05
             pg.evaluate(f"render({t})"); f = D / "qc" / f'{reel["id"]}_s{k+1}.png'; pg.screenshot(path=str(f)); shots.append(str(f))
         subprocess.run(["ffmpeg", "-v", "error", "-y", *sum([["-i", s] for s in shots], []), "-filter_complex",
-                        "".join(f"[{k}]crop=1080:1460:0:0,scale=360:-1[v{k}];" for k in range(len(shots))) + "".join(f"[v{k}]" for k in range(len(shots))) + f"hstack=inputs={len(shots)}",
+                        "".join(f"[{k}]crop=1080:1460:0:0,scale=360:-1[v{k}];" for k in range(len(shots))) + ("".join(f"[v{k}]" for k in range(len(shots))) + f"hstack=inputs={len(shots)}" if len(shots) > 1 else "[v0]null"),
                         str(D / "qc" / f'{reel["id"]}_sheet.png')], check=True)
         if not stills_only:
             out = D / "out" / f"{name}.mp4"

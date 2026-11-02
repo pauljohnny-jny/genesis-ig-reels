@@ -39,6 +39,10 @@ svg text{font-family:Plex}
 .wb{font:700 40px Inter,NTamil;fill:#fff}
 .ta{font:500 30px NSans,NTamil;fill:#BFD6E8}
 .code{font:500 30px Plex;fill:#E6F0F7}
+.hk{position:absolute;left:72px;top:346px;max-width:778px;font:800 104px/1.08 Inter,NTamil;color:#11324F;letter-spacing:-2px;white-space:nowrap}
+.hk2{position:absolute;left:72px;top:470px;max-width:778px;font:700 62px/1.2 NSans,NTamil;color:#E8770A;white-space:nowrap}
+.panel.hpanel{top:580px;height:760px;border-radius:26px}
+.hflash{position:absolute;inset:0;background:#F06A55;opacity:0;pointer-events:none}
 """
 
 JS = r"""
@@ -55,6 +59,13 @@ window.render=function(t){
     if(e.hasAttribute('pathLength')){e.style.strokeDasharray='1';e.style.strokeDashoffset=1-p;} e.style.opacity=p>0?(e.hasAttribute('pathLength')?1:p):0;});
   s.querySelectorAll('.pulse').forEach(e=>{const a=+e.dataset.t; if(tl<a){e.style.opacity=0;return;}
     const ph=tl-a; e.style.opacity=cl(ph/0.3)*(0.45+0.55*Math.abs(Math.cos(ph*Math.PI/1.1)));});
+  s.querySelectorAll('.move').forEach(e=>{const a=+e.dataset.t,d=+(e.dataset.d||1); const p=ease(cl((tl-a)/d));
+    e.setAttribute('transform',`translate(${(+e.dataset.dx||0)*p} ${(+e.dataset.dy||0)*p})`);});
+  s.querySelectorAll('.grow').forEach(e=>{const a=+e.dataset.t,d=+(e.dataset.d||1); const p=ease(cl((tl-a)/d));
+    e.setAttribute('width',Math.max(0,(+e.dataset.w)*p));});
+  s.querySelectorAll('.blink').forEach(e=>{const a=+e.dataset.t; e.style.opacity=tl<a?0:(+(e.dataset.o||0.35))*cl(1-(tl-a)/0.35);});
+  s.querySelectorAll('.shake').forEach(e=>{const a=+e.dataset.t; const k=tl-a; const x=(k>=0&&k<0.4)?Math.sin(k*90)*8*(0.4-k)/0.4:0;
+    e.setAttribute('transform',`translate(${x} 0)`);});
   s.querySelectorAll('.spin').forEach(e=>{const r=+(e.dataset.r||1); e.setAttribute('transform',`rotate(${(r*tl*120)%360} ${e.dataset.cx} ${e.dataset.cy})`);});
  });
 };
@@ -64,8 +75,8 @@ window.check=function(){
  scenes.forEach((s,i)=>{
   render(+s.dataset.end-0.3);
   const pr=s.querySelector('.panel').getBoundingClientRect();
-  s.querySelectorAll('.tag,.title,.sub,.body,.cta,.foot').forEach(e=>{const r=e.getBoundingClientRect();
-    let w=r.width; if(e.classList.contains('title')||e.classList.contains('sub')||e.classList.contains('tag')||e.classList.contains('cta')) w=Math.max(r.width,e.scrollWidth);
+  s.querySelectorAll('.tag,.title,.sub,.hk,.hk2,.body,.cta,.foot').forEach(e=>{const r=e.getBoundingClientRect();
+    let w=r.width; if(e.classList.contains('title')||e.classList.contains('sub')||e.classList.contains('hk')||e.classList.contains('hk2')||e.classList.contains('tag')||e.classList.contains('cta')) w=Math.max(r.width,e.scrollWidth);
     const right=r.left+w;
     if(right>852||r.top<228||r.bottom>1442) out.push(`S${i+1} ${e.className.split(' ')[0]} out of safe zone: right ${right|0} top ${r.top|0} bottom ${r.bottom|0}`);});
   const b=s.querySelector('.body'), c=s.querySelector('.cta');
@@ -122,7 +133,21 @@ def cross(cx, cy, t):
     return f'<g class="a" data-t="{t}"><circle cx="{cx}" cy="{cy}" r="20" fill="{RED}"/><path d="M{cx-8} {cy-8}l16 16M{cx+8} {cy-8}l-16 16" stroke="{PANEL}" stroke-width="4.5"/></g>'
 
 
+def hook_scene_html(i, n, sc):
+    """Hook scene (reels 17+): giant line visible at 0.0 s, Tamil follow-up at ~0.35 s, tall 778x760 panel with motion from frame 1.
+    sc: hook (<= ~6 words), hook2, svg (viewBox 0 0 778 760), optional flash_t (red screen flash), s, e."""
+    fl = f'<div class="hflash blink" data-t="{sc["flash_t"]}"></div>' if sc.get("flash_t") is not None else ""
+    return f'''<div class="scene" data-start="{sc["s"]}" data-end="{sc["e"]}">
+<div class="hk a" data-t="0">{esc(sc["hook"])}</div>
+<div class="hk2 a" data-t="{sc.get("hook2_t", 0.35)}"{f' style="font-size:{sc["h2size"]}px"' if sc.get("h2size") else ""}>{esc(sc["hook2"])}</div>
+<div class="panel hpanel a" data-t="0"><svg viewBox="0 0 778 760" width="778" height="760">{DEFS}{sc["svg"]}</svg></div>
+<div class="foot">TECHNICAL SCREENING &nbsp;·&nbsp; {i+1:02d} / {n:02d}</div>{fl}
+</div>'''
+
+
 def scene_html(i, n, sc):
+    if sc.get("hook"):
+        return hook_scene_html(i, n, sc)
     tsize = f' style="font-size:{sc["tsize"]}px"' if sc.get("tsize") else ""
     ssize = f' style="font-size:{sc["ssize"]}px"' if sc.get("ssize") else ""
     cta = ""
@@ -148,7 +173,7 @@ def build(reel, path):
     scenes = "\n".join(scene_html(i, len(sc), s) for i, s in enumerate(sc))
     doc = f'''<!doctype html><html><head><meta charset="utf-8"><title>Genesis CNC {reel["id"]}</title><style>{CSS}</style></head>
 <body><img class="logo" src="assets/logo.png"><div class="hdr-r">CNC &nbsp;/&nbsp; FIELD NOTES</div>
-<div class="rule" style="top:326px"></div><div class="rule" style="top:1370px"></div>
+<div style="position:absolute;left:0;top:0;opacity:0;font:500 42px NTamil">அ<b style="font:700 80px Inter">A</b></div><div class="rule" style="top:326px"></div><div class="rule" style="top:1370px"></div>
 {scenes}
 <script>window.TOTAL={sc[-1]["e"]};{JS}</script></body></html>'''
     open(path, "w", encoding="utf-8").write(doc)
