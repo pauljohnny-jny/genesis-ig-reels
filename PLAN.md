@@ -20,7 +20,7 @@ Number = reel ID used in file names. Update this file in the same commit as any 
 | 12 | Caliper: resolution vs accuracy | live |
 | 13 | G02/G03 I, J arc centre (Haas mill example) | live – 2 Nov 2026 |
 | 14 | Toolholder runout (TIR) | live – 2 Nov 2026 |
-| 15 | Reading a metric micrometer | approved – 3 Nov 09:00 IST |
+| 15 | Reading a metric micrometer | live – 3 Nov 2026 |
 | 16 | Thermal drift: morning vs afternoon part | approved – 3 Nov 19:30 IST |
 
 ## Queue (take from the top; verify each teaching point with the named source first)
