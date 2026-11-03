@@ -32,6 +32,6 @@ python3 render.py specs/batchE.py 14                 # full MP4 to out/
 
 ## Publish (after approval only)
 1. Commit the final MP4 to `reels/` and the caption to `captions/`; push to `main`.
-2. Raw URL: `https://raw.githubusercontent.com/pauljohnny07/genesis-ig-reels/main/reels/<file>.mp4`
+2. Raw URL: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-ig-reels/main/reels/<file>.mp4`
 3. vidIQ: `vidiq_video_upload` from that URL → `vidiq_instagram_publish_reel` with the approved caption and settings.
 4. Confirm the permalink, then record it in the Project's publication log.
