@@ -13,6 +13,7 @@ stills_only = "--stills-only" in sys.argv
 FPS = 30
 (D / "qc").mkdir(exist_ok=True); (D / "out").mkdir(exist_ok=True)
 
+failed = []
 with sync_playwright() as p:
     b = p.chromium.launch()
     for reel in mod.REELS:
@@ -27,6 +28,8 @@ with sync_playwright() as p:
         total = pg.evaluate("window.TOTAL")
         print(f"== {name}  {total}s  issues: {len(issues)}")
         for i in issues: print("   ", i)
+        if issues:
+            failed.append(name); print("   STOP: fix the issues above; no stills sheet or MP4 for this reel"); pg.close(); continue
         # QC stills: end of every scene (fully built) for review
         shots = []
         for k, sc in enumerate(reel["scenes"]):
@@ -35,6 +38,14 @@ with sync_playwright() as p:
         subprocess.run(["ffmpeg", "-v", "error", "-y", *sum([["-i", s] for s in shots], []), "-filter_complex",
                         "".join(f"[{k}]crop=1080:1460:0:0,scale=360:-1[v{k}];" for k in range(len(shots))) + ("".join(f"[v{k}]" for k in range(len(shots))) + f"hstack=inputs={len(shots)}" if len(shots) > 1 else "[v0]null"),
                         str(D / "qc" / f'{reel["id"]}_sheet.png')], check=True)
+        hook = [sc for sc in reel["scenes"] if sc.get("hook")]
+        if hook:  # opening frames: the hook must read at 0.0 s and 0.35 s, and every countdown boundary
+            hs = []
+            for t in (0.0, 0.35, 1.0, 1.5, 2.0, 2.5, 3.0, hook[0]["e"] - 0.3):
+                pg.evaluate(f"render({t})"); f = D / "qc" / f'{reel["id"]}_hook_{t:.2f}.png'; pg.screenshot(path=str(f)); hs.append(str(f))
+            subprocess.run(["ffmpeg", "-v", "error", "-y", *sum([["-i", s] for s in hs], []), "-filter_complex",
+                            "".join(f"[{k}]crop=1080:1200:0:220,scale=270:-1[v{k}];" for k in range(len(hs))) + "".join(f"[v{k}]" for k in range(len(hs))) + f"hstack=inputs={len(hs)}",
+                            str(D / "qc" / f'{reel["id"]}_hook_sheet.png')], check=True)
         if not stills_only:
             out = D / "out" / f"{name}.mp4"
             ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "image2pipe", "-framerate", str(FPS), "-i", "-",
@@ -46,3 +57,5 @@ with sync_playwright() as p:
             ff.stdin.close(); ff.wait(); print("   rendered", out.name, "rc", ff.returncode)
         pg.close()
     b.close()
+if failed:
+    print("FAILED:", ", ".join(failed)); sys.exit(1)
