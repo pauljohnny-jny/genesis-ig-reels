@@ -21,13 +21,13 @@ Number = reel ID used in file names. Update this file in the same commit as any 
 | 13 | G02/G03 I, J arc centre (Haas mill example) | live – 2 Nov 2026 |
 | 14 | Toolholder runout (TIR) | live – 2 Nov 2026 |
 | 15 | Reading a metric micrometer | live – 3 Nov 2026 |
-| 16 | Thermal drift: morning vs afternoon part | approved – 3 Nov 19:30 IST |
+| 16 | Thermal drift: morning vs afternoon part | live – 3 Nov 2026 |
+| 17 | G90 vs G91 (Haas mill example) | approved media – 5 Nov 09:00 IST missed; awaiting Johnny's new publication time · hook: cold-open demo · spec batchG.py |
+| 18 | 0.01 mm = ? µm | approved – 5 Nov 19:30 IST · corrected ÷ 10 export · hook: countdown quiz · spec batchG.py |
 
 ## Queue (take from the top; verify each teaching point with the named source first)
 | ID | Topic | Lesson (no universal tolerances) | Source to verify | CTA |
 |---|---|---|---|---|
-| 17 | G90 vs G91 | Absolute vs incremental; a forgotten G91 makes later moves relative (Haas mill example) | Haas / Productivity training manual | SEND |
-| 18 | 0.01 mm = ? µm | 0.01 mm = 10 µm; 0.010 is the same value to 3 decimals | SI | SAVE |
 | 19 | Reading a metric vernier caliper | Main scale + coinciding vernier line × graduation (model-specific) | Mitutoyo | SAVE |
 | 20 | Proving out a new program | Single block, reduced rapid, distance-to-go, first-piece check; aids never guarantee clearance | Haas operator manual | SEND |
 | 21 | Reading a Haas startup block | G00 G90 G17 G40 G49 G54 explained; not universal | Productivity training manual | SAVE |
