@@ -1,0 +1,7 @@
+ஒரு G91. Tool எங்கே போகும்? G90 vs G91 – absolute vs incremental (Haas mill example).
+
+X40-ல் இருந்து: G90 G00 X50. → X50; G91 G00 X50. → X90 (X40 + 50). Haas workbook-ன்படி G91 modal: G90 வரும் வரை அடுத்த X, Y, Z move-களும் incremental. அதனால் அடுத்த வரியில் வரும் X50. மேலும் 50 mm நகர்த்தும் (X90 + 50 = X140). Assumptions: metric (mm), Haas mill control; மற்ற control-களுக்கு அவற்றின் manual-ஐப் பாருங்கள். VMC operator-கள் program-ல் G91 எங்கே தொடங்குகிறது, G90 எங்கே திரும்புகிறது என்று படித்துப் பாருங்கள்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #CNCProgramming #GCode
