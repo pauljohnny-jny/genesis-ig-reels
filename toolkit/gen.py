@@ -40,7 +40,7 @@ svg text{font-family:Plex}
 .ta{font:500 30px NSans,NTamil;fill:#BFD6E8}
 .code{font:500 30px Plex;fill:#E6F0F7}
 .hk{position:absolute;left:72px;top:346px;max-width:778px;font:800 104px/1.08 Inter,NTamil;color:#11324F;letter-spacing:-2px;white-space:nowrap}
-.hk2{position:absolute;left:72px;top:470px;max-width:778px;font:700 62px/1.2 NSans,NTamil;color:#E8770A;white-space:nowrap}
+.hk2{position:absolute;left:72px;top:470px;max-width:778px;font:700 62px/1.2 NSans,NTamil;color:#B35400;white-space:nowrap}
 .panel.hpanel{top:580px;height:760px;border-radius:26px}
 .hflash{position:absolute;inset:0;background:#F06A55;opacity:0;pointer-events:none}
 """
@@ -55,7 +55,11 @@ window.render=function(t){
   s.style.opacity=op; s.style.visibility=op>0?'visible':'hidden'; const tl=t-st;
   s.querySelectorAll('.a').forEach(e=>{const a=+e.dataset.t; const p=(i==0&&a<=0)?1:ease(cl((tl-a)/0.4)); e.style.opacity=p;
     if(!(e instanceof SVGElement)) e.style.transform=`translateY(${(1-p)*18}px)`;});
-  s.querySelectorAll('.draw').forEach(e=>{const a=+e.dataset.t,d=+(e.dataset.d||0.5); const p=ease(cl((tl-a)/d));
+  s.querySelectorAll('.until').forEach(e=>{e.style.opacity=tl<+e.dataset.end?1:0;});
+  s.querySelectorAll('.count').forEach(e=>{const a=+e.dataset.t,n=+e.dataset.n,st=+(e.dataset.step||1); const k=Math.floor((tl-a)/st);
+    if(tl<a||k>=n){e.style.opacity=0;return;} e.style.opacity=1; e.textContent=String(n-k);});
+  s.querySelectorAll('.draw').forEach(e=>{const a=+e.dataset.t,d=+(e.dataset.d||0.5); const q=cl((tl-a)/d); const p=e.dataset.lin?q:ease(q);
+    if(e.dataset.hide&&tl>=a+d){e.style.opacity=0;return;}
     if(e.hasAttribute('pathLength')){e.style.strokeDasharray='1';e.style.strokeDashoffset=1-p;} e.style.opacity=p>0?(e.hasAttribute('pathLength')?1:p):0;});
   s.querySelectorAll('.pulse').forEach(e=>{const a=+e.dataset.t; if(tl<a){e.style.opacity=0;return;}
     const ph=tl-a; e.style.opacity=cl(ph/0.3)*(0.45+0.55*Math.abs(Math.cos(ph*Math.PI/1.1)));});
@@ -135,11 +139,13 @@ def cross(cx, cy, t):
 
 def hook_scene_html(i, n, sc):
     """Hook scene (reels 17+): giant line visible at 0.0 s, Tamil follow-up at ~0.35 s, tall 778x760 panel with motion from frame 1.
-    sc: hook (<= ~6 words), hook2, svg (viewBox 0 0 778 760), optional flash_t (red screen flash), s, e."""
+    sc: hook (<= ~6 words), hook2 (visible at frame 1 by default; hook2_t to delay), optional hsize/h2size, svg (viewBox 0 0 778 760),
+    optional flash_t (red screen flash), s, e. Animation classes for the svg: .a fade-in, .move (data-dx/dy, data-d), .grow (data-w),
+    .shake, .blink, .draw (data-lin="1" for a linear clock, data-hide="1" to clear at the end), .count (data-n, data-step: 3-2-1 numeral), .until (data-end: visible until then)."""
     fl = f'<div class="hflash blink" data-t="{sc["flash_t"]}"></div>' if sc.get("flash_t") is not None else ""
     return f'''<div class="scene" data-start="{sc["s"]}" data-end="{sc["e"]}">
-<div class="hk a" data-t="0">{esc(sc["hook"])}</div>
-<div class="hk2 a" data-t="{sc.get("hook2_t", 0.35)}"{f' style="font-size:{sc["h2size"]}px"' if sc.get("h2size") else ""}>{esc(sc["hook2"])}</div>
+<div class="hk a" data-t="0"{f' style="font-size:{sc["hsize"]}px"' if sc.get("hsize") else ""}>{esc(sc["hook"])}</div>
+<div class="hk2 a" data-t="{sc.get("hook2_t", 0)}"{f' style="font-size:{sc["h2size"]}px"' if sc.get("h2size") else ""}>{esc(sc["hook2"])}</div>
 <div class="panel hpanel a" data-t="0"><svg viewBox="0 0 778 760" width="778" height="760">{DEFS}{sc["svg"]}</svg></div>
 <div class="foot">TECHNICAL SCREENING &nbsp;·&nbsp; {i+1:02d} / {n:02d}</div>{fl}
 </div>'''
