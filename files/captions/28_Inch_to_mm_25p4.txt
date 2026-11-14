@@ -1,0 +1,7 @@
+0.001 in = ? mm – inch-ஐ mm ஆக மாற்றுவது எப்படி?
+
+NIST-படி 1 in = 25.4 mm சரியாக (exact). 0.001 × 25.4 = 0.0254 → 0.001 in = 0.0254 mm (= 25.4 µm). mm-ஐ inch ஆக்க 25.4-ஆல் வகுக்கவும். Haas mill example: Haas programming workbook-படி inch/mm தேர்வு Setting 9-ல் செய்யப்படுகிறது; program-ல் உள்ள G20 (inch) / G21 (metric) அந்த setting சரியா என்று உறுதிசெய்யப் பயன்படும். Assumptions: Haas mill control; மற்ற control-களுக்கு அவற்றின் manual-ஐப் பாருங்கள். VMC operator-கள் drawing, program, control மூன்றும் ஒரே unit-ஆ என்று பாருங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #GCode #CNCProgramming

@@ -1,0 +1,7 @@
+35 = 0.35 mm? Dial indicator reading – revolution counter-ஐயும் படியுங்கள்.
+
+Reading = counter × 1 mm + pointer பிரிவு × 0.01 mm. உதாரணம்: counter 1, pointer 35 → 1 + 35 × 0.01 = 1.35 mm. Pointer எந்தத் திசையில் நகர்ந்தது என்றும் பாருங்கள்: zero-விலிருந்து பின்னோக்கி 20 பிரிவு நகர்ந்தால் dial-ல் 80 தெரியும், ஆனால் நகர்வு 20 பிரிவு (0.20 mm). Assumptions: Mitutoyo 2046S போன்ற 0.01 mm graduation, 1 mm per revolution model; reverse-reading model-களும் உண்டு – உங்கள் manual-ஐப் பாருங்கள். VMC operator-கள் master-ல் zero செய்து, அதே setup-ல் அளவிடுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #DialIndicator #PrecisionMeasurement

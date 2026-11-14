@@ -1,0 +1,7 @@
+Ra 1.6 = ? Surface roughness Ra – 1.6 என்பது 1.6 µm.
+
+Ra = mean line-இலிருந்து profile விலகல்களின் (|Z|) arithmetical mean, µm-ல் (1.6 µm = 0.0016 mm). Reel-ல் உள்ளது பழைய ISO 4288 table உதாரணம் (non-periodic profile, 0.1 < Ra ≤ 2 µm): λc 0.8 mm, ln 4 mm (5 sampling lengths). ISO 4288-ஐ இப்போது ISO 21920 மாற்றியுள்ளது; எந்த standard, cut-off, length என்பதை drawing-ல் குறிப்பிட்டதே தீர்மானிக்கும் – இதை எல்லா வேலைக்கும் பொதுவான setup ஆக எடுக்காதீர்கள். Ra தனி peak, valley-களால் அதிகம் மாறாது – அதனால் ஒரே Ra உள்ள இரண்டு surface வேறு வடிவில் இருக்கலாம். Assumption: drawing-ல் Ra µm-ல் கொடுக்கப்பட்டுள்ளது. VMC operator-கள் drawing-ல் உள்ள மற்ற parameter-களையும் படியுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #SurfaceRoughness #SurfaceFinish

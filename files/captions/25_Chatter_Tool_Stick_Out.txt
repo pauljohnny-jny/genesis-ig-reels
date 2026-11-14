@@ -1,0 +1,7 @@
+5×D stick-out. Chatter-ம் tool stick-out-ம்: shortest practical overhang.
+
+Sandvik Coromant-படி tool assembly-ஐ முடிந்தவரை rigid, short ஆக வைக்கவும்; முடிந்த பெரிய holder/adaptor தேர்வு செய்யவும். Overhang 4×D-க்கு மேல் போனால் vibration வாய்ப்பு அதிகம் என்பது Sandvik guidance, fixed limit அல்ல. மற்ற levers: tool clamping, fixture support, ap குறைத்தல், fz கூட்டுதல்; Sandvik-படி 50 rpm அளவு சிறிய மாற்றம் கூட vibration உள்ள cut-ஐ stable ஆக்கலாம். Assumptions: end mill milling; drawing schematic, vibration பெரிதாகக் காட்டப்பட்டுள்ளது; cutting data tool maker-படி. VMC operator-கள் part-ஐ அடைய தேவையான நீளம் மட்டும் tool-ஐ நீட்டுங்கள்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #CNCMilling #Chatter

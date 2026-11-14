@@ -1,0 +1,7 @@
+Plate-ல் 0.30 mm! Height gauge – surface plate-ல் zero, பிறகு அளவு.
+
+Scriber plate-ல் தொட்டபோது 0.30 காட்டினால், ஒவ்வொரு உயரமும் 0.30 அதிகமாக வரும் (25.00 mm part → 25.30). முதலில் plate, gauge base இரண்டையும் தூசி, burr இல்லாமல் சுத்தம் செய்து, slider-ஐ மெதுவாக இறக்கி (அதிக force-ல் base தூக்கும்), clamp செய்த பின் setting-ஐ மீண்டும் சரிபாருங்கள் (Mitutoyo). Part ஒரு parallel மேல் இருந்தால் reading-ல் parallel உயரமும் சேரும். Assumptions: example values; zero செய்யும் முறை model-ஐப் பொறுத்தது (adjustable main scale அல்லது digital) – manual-ஐப் பாருங்கள். VMC operator-கள் zero, measurement இரண்டும் ஒரே plate reference-இலிருந்து என்று உறுதிசெய்யுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #HeightGauge #PrecisionMeasurement

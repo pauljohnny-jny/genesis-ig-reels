@@ -1,0 +1,7 @@
+Seiton = ? 5S on the shop floor – Sort, Set in order, Shine, Standardise, Sustain.
+
+Seiri = Sort, Seiton = Set in order, Seiso = Shine, Seiketsu = Standardise, Shitsuke = Sustain (ASQ). Lean Enterprise Institute Seiton-ஐ “Straighten” என்றும் மொழிபெயர்க்கிறது – ஒவ்வொரு பொருளுக்கும் ஓர் இடம். ASQ-படி Shine என்பது சுத்தம் மட்டுமல்ல, inspection-ம் சேர்ந்தது. Assumption: VMC உதாரணங்கள் விளக்கத்துக்காக மட்டும்; உங்கள் shop-ன் 5S standard-ஐப் பின்பற்றுங்கள். VMC operator-கள் machine நின்ற பிறகே table, vise chip-களைச் சுத்தம் செய்யுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #5S #LeanManufacturing

@@ -1,0 +1,7 @@
+Rough = Finish? Roughing vs finishing: ap, feed, நோக்கம் என்ன மாறும்?
+
+Sandvik Coromant-படி roughing: அதிக depth of cut (ap), அதிக feed, அதிக edge security. Finishing: குறைந்த ap, குறைந்த feed, குறைந்த cutting force; நோக்கம் surface, size. Sandvik profile milling guide வேலையை roughing/semi-roughing, semi-finishing, finishing என குறைந்தது மூன்றாகப் பிரிக்கச் சொல்கிறது; மீதமுள்ள stock semi-finishing, finishing-ல் நீக்கப்படும். Assumptions: universal values இல்லை; ap, fz, finish stock அளவு tool maker data, process sheet, drawing-படி. VMC operator-கள் interview-ல் தாங்கள் செய்த ஒரு job உதாரணம் சொல்லுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCMilling #Machining

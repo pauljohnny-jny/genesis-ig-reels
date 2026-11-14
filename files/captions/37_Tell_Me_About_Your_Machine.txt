@@ -1,0 +1,7 @@
+“Tell me about your machine.” – interview-ல் இந்தக் கேள்விக்கு 5 விஷயங்களில் பதில்.
+
+Control, axis travels (X ___ Y ___ Z ___ mm), ATC tool capacity, நீங்கள் வெட்டிய material, part மற்றும் அதில் உங்கள் பங்கு (setup / offsets / inspection). எண்கள் நினைவில்லை என்றால் ஊகிக்காதீர்கள்: முன்பே machine manual அல்லது spec sheet-ல் சரிபார்த்துக்கொள்ளுங்கள், இல்லையெனில் “சரியாக நினைவில்லை” என்று சொல்லுங்கள். Assumption: reel-ல் உள்ள blank-கள் placeholder மட்டும், எந்த machine-ன் உண்மை எண்ணும் அல்ல. VMC operator-கள் தாங்கள் உண்மையில் ஓட்டிய machine பற்றி மட்டும் சொல்லுங்கள்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #CNCOperator #InterviewPreparation

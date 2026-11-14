@@ -1,0 +1,7 @@
+F500. → 250? Cycle start-க்கு முன் feed, rapid override check (Haas mill example).
+
+Feed override, program-ல் உள்ள F-ஐ சதவீதமாக மாற்றும்: F500 at 50% → 250 mm/min. Haas control-ல் [100% FEEDRATE] key override-ஐ programmed feed-க்குத் திருப்பும்; rapid keys 5% / 25% / 50% / 100% rapid move-களை அந்த அளவுக்குக் கட்டுப்படுத்தும். M30, M06 அல்லது RESET override-ஐ default-க்குத் திருப்புமா என்பது Setting 83, 87, 88-ஐப் பொறுத்தது – அதனால் screen-ல் % பாருங்கள். Assumptions: metric (mm/min), Haas mill control; மற்ற control-களுக்கு அவற்றின் manual-ஐப் பாருங்கள். VMC operator-கள் cycle start-க்கு முன் feed, spindle, rapid மூன்றையும் சரிபார்க்கவும்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #CNCOperator #CNCMachining

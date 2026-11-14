@@ -1,0 +1,7 @@
+Edge finder vs probe? – work offset எடுக்கும் இரண்டு வழிகள்.
+
+Edge finder kick ஆகும்போது spindle centre edge-லிருந்து ஒரு tip radius தூரத்தில் இருக்கும்; அதை நீங்கள் கணக்கில் சேர்க்க வேண்டும். உதா. Ø6 tip, −X பக்கத்திலிருந்து: EDGE X = SPINDLE X + 3.000. Probe-ல் cycle தொட்ட இடத்தைக் கணக்கிடும்; system, cycle, settings-ஐப் பொறுத்து work offset-ஐ update செய்யலாம் அல்லது result-ஐ report மட்டும் செய்யலாம். இரண்டு முறையிலும் cut-க்கு முன் offset page-ஐ verify செய்யுங்கள். Assumption: metric, X edge pickup; control-க்கு ஏற்ப உங்கள் manual-ஐப் பாருங்கள். VMC operator-கள் நீங்கள் பயன்படுத்திய முறையை வைத்துச் சொல்லுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #WorkOffset #CNCSetup

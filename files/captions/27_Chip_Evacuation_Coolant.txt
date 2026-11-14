@@ -1,0 +1,7 @@
+1 chip, 2 cuts? Coolant, chip evacuation: chip ஏன் cut-ஐ விட்டு வெளியேற வேண்டும்?
+
+Sandvik Coromant-படி full slotting, pocketing, vertical machine-ல் ஆழமான pocket-ல் chip recut அதிகம்; இது cutting edge fracture, chip jamming தரும். KYOCERA SGS-படி recut chip சூட்டைக் கூட்டி tool wear-ஐ வேகப்படுத்தும், part surface-ஐ கீறும். Sandvik தீர்வு: compressed air அல்லது ஏராளமான coolant, முடிந்தால் internal (through-tool) coolant; ஆழமான cut-ஐ பல pass-ஆகப் பிரிக்கவும். Wet milling என்றால் coolant-ஐ copiously கொடுக்க வேண்டும் என்றும் Sandvik சொல்கிறது; wet அல்லது dry என்பது tool maker data-படி. Assumptions: VMC-ல் end mill pocketing, drawing schematic. VMC operator-கள் pocket-ல் chip தங்குகிறதா என்று கவனியுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #ChipEvacuation #CNCMachining

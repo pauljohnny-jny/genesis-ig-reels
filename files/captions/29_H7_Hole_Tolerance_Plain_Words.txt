@@ -1,0 +1,7 @@
+Ø10 H7 என்றால்? – H7 hole tolerance எளிய விளக்கம் (ISO 286).
+
+ISO 286-ல் பெரிய எழுத்து = hole, சிறிய எழுத்து = shaft. H: lower deviation 0 – hole nominal அளவை விடச் சிறியதாகாது. 7 = IT tolerance grade, அதாவது zone-ன் அகலம். உதாரணம் (ISO 286-2 table, over 6 inc. 10 mm row): Ø10 H7 = +0.015 / 0 → 10.000 – 10.015 mm. Size மாறினால் limit மாறும்: Ø12 H7 = +0.018 / 0. Hole-basis system-ல் hole H-ஆக இருக்கும்; shaft tolerance-ஐ மாற்றி clearance, transition அல்லது interference fit தேர்வு செய்வார்கள். Assumption: metric, ISO 286 drawing callout. VMC operator-கள் மனப்பாடம் செய்யாமல், size-க்கு ஏற்ற table row-ஐப் படியுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #ISOTolerance #EngineeringDrawing

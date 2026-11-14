@@ -1,0 +1,7 @@
+Sweep: 0 → 0.04 – dial indicator-ஆல் vise-ஐ tram (align) செய்வது.
+
+Spindle-ல் dial indicator வைத்து fixed jaw-ஐ (movable jaw அல்ல) X axis-ல் முழு நீளத்துக்கும் sweep செய்யுங்கள். Reading மாறினால் jaw X travel-க்கு parallel இல்லை. ஒரு bolt-ஐ pivot ஆக வைத்து soft mallet-ஆல் மெதுவாகத் தட்டி adjust செய்து, bolt-களை இறுக்கி, மீண்டும் sweep செய்யுங்கள் – இறுக்கும்போது vise நகரலாம். Reel-ல் உள்ள 0.00 → 0.04 mm ஒரு உதாரண reading மட்டும்; அனுமதி அளவு job drawing அல்லது shop procedure-படி, universal number இல்லை. VMC operator-கள் தாங்கள் செய்த setup-ஐ வைத்தே விளக்குங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCSetup #DialIndicator

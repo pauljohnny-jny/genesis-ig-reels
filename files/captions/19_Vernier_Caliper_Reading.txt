@@ -1,0 +1,7 @@
+16.12 mm? தவறு. Metric vernier caliper reading – 0.02 mm graduation.
+
+Reading = main scale + (ஒத்துப்போகும் vernier கோடு × graduation). உதாரணம்: vernier 0-க்கு முன் main scale 16 mm; 12-வது கோடு ஒத்துப்போகிறது → 16 + 12 × 0.02 = 16.24 mm (12 × 0.01 என்று எடுத்தால் 16.12 – தவறு). Mitutoyo-ன்படி 0.02 mm vernier-ல் 50 கோடுகள் = 49 mm. Assumptions: metric caliper, 0.02 mm graduation; graduation model-ஐப் பொறுத்தது – உங்கள் caliper-ல் எழுதியிருப்பதைப் பாருங்கள். VMC operator-கள் jaws மூடி zero சரிபார்த்து, நேராகப் பார்த்துப் படியுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #VernierCaliper #PrecisionMeasurement

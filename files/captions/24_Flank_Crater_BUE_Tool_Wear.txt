@@ -1,0 +1,7 @@
+“3 wear என்ன?” Flank wear, crater wear, built-up edge (BUE) – pattern-ஐப் பார்த்து, பிறகு காரணம்.
+
+Sandvik Coromant guide-படி: flank wear flank face-ல் வரும் abrasive wear (workpiece-ல் உள்ள கடினத் துகள்கள்); இது எதிர்பார்க்கும், நிலையான tool life தரும் wear. Crater wear rake face-ல் வரும் chemical wear; cutting speed கூடக் கூட அதிகமாகும், அதிகமானால் edge பலவீனமாகி உடையலாம். BUE என்பது chip insert-ல் pressure welding ஆவது; low carbon steel, stainless steel, aluminium போன்ற sticky material-ல் அதிகம், குறைந்த cutting speed-ல் கூடும். Assumptions: carbide insert, drawing schematic (wear பெரிதாகக் காட்டப்பட்டுள்ளது); cutting data-வை உங்கள் tool maker guide-படி மாற்றுங்கள். VMC operator-கள் ஒவ்வொரு job முடிந்ததும் insert edge-ஐப் பாருங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #ToolWear #CNCMachining

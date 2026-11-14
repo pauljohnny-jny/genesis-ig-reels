@@ -1,0 +1,7 @@
+G18 = எந்த plane? G17 / G18 / G19 – arc plane selection (Haas mill example).
+
+G17 = XY, G18 = XZ, G19 = YZ. G02/G03 arc அந்த இரண்டு axis-ல் நகரும்; arc centre எழுத்துகள்: G17 → I J, G18 → I K, G19 → J K. Haas workbook-படி power-on default G17; plane modal – அடுத்த plane code வரை தொடரும். Haas-ல் G41/G42 2D cutter comp XY (G17) plane-ல் மட்டும். Assumptions: Haas mill control, 3-axis VMC; மற்ற control-களுக்கு அவற்றின் manual-ஐப் பாருங்கள். VMC operator-கள் arc block-க்கு முன் active plane-ஐச் சரிபார்க்கவும்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCProgramming #GCode

@@ -1,0 +1,7 @@
+M10 tap: Ø10 drill? தவறு! – Cut tap-க்கு tap drill size.
+
+Cut tap-க்கு பொது விதி: drill = D − P (nominal Ø − pitch). M10 × 1.5 → 10 − 1.5 = 8.5 mm. Ø10 hole-ல் thread வெட்ட material இருக்காது – tap, hole சுவரில் தான் thread வெட்டும். Forming tap material-ஐ வெட்டாமல் தள்ளும்; அதற்கு drill பெரியதாக இருக்கும், அதனால் tap maker-ன் chart-ஐப் பாருங்கள். Assumption: ISO metric coarse thread, cutting tap. VMC operator-கள் tap type-ஐ முதலில் உறுதி செய்யுங்கள்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #Tapping #CNCMachining

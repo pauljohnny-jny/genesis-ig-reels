@@ -1,0 +1,7 @@
+Ø20 H7: GO, NO-GO? Plain plug gauge – hole-க்கு எந்த end எதை prove செய்யும்?
+
+GO end = hole-ன் lower (minimum) limit: முழு நீளமும் நுழைய வேண்டும். NO-GO end = upper (maximum) limit: நுழையக்கூடாது. GO நுழையவில்லை → hole சிறியது அல்லது form பிழை; NO-GO நுழைந்தால் → hole பெரியது. NO-GO end பெரும்பாலும் குட்டையாக, red band உடன் இருக்கும். Assumptions: plain plug gauge, hole சோதனை; gauge அளவுகள் gauge-ல் உள்ள marking-படி – இங்கு tolerance மதிப்புகள் இல்லை. VMC operator-கள் இரண்டு end-ம் சரியானால் மட்டுமே hole limits-க்குள் என்று சொல்லுங்கள்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #GoNoGoGauge #QualityInspection

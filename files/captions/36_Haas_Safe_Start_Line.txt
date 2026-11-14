@@ -1,0 +1,7 @@
+Tool 2: X50. → X90? Haas safe start line-ஐப் படிப்பது எப்படி (Haas mill example).
+
+G00 G90 G17 G40 G49 G54: G00 rapid, G90 absolute, G17 XY plane, G40 cutter comp cancel, G49 tool length comp cancel, G54 work offset. Haas training partner Productivity Inc. இந்த block-ஐ ஒவ்வொரு tool change-க்குப் பின்பும் வைக்கப் பரிந்துரைக்கிறது. உதாரணம்: tool 1-ன் G91 மீதம் இருந்தால் X40-ல் இருந்து X50. → X90; safe line-ல் G90 வந்தால் → X50. G80 (canned cycle cancel) இந்த வரியில் உள்ளதா என்பது உங்கள் shop template-ஐப் பொறுத்தது. Assumptions: metric (mm), Haas mill control; இந்த வரி எல்லா control-க்கும் ஒன்றல்ல. VMC operator-கள் program-ன் முதல் வரிகளைப் படித்துப் பாருங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCProgramming #GCode
