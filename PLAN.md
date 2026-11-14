@@ -25,25 +25,39 @@ Number = reel ID used in file names. Update this file in the same commit as any 
 | 17 | G90 vs G91 (Haas mill example) | live – 5 Nov 2026 13:05:05 IST · [permalink](https://www.instagram.com/reel/DfWgcDRAgn_/) · hook: cold-open demo · spec batchG.py |
 | 18 | 0.01 mm = ? µm | live – 5 Nov 2026 19:31:43 IST · [permalink](https://www.instagram.com/reel/DfXMrK8DrTi/) · hook: countdown quiz · spec batchG.py |
 
-## Queue (take from the top; verify each teaching point with the named source first)
-| ID | Topic | Lesson (no universal tolerances) | Source to verify | CTA |
-|---|---|---|---|---|
-| 19 | Reading a metric vernier caliper | Main scale + coinciding vernier line × graduation (model-specific) | Mitutoyo | SAVE |
-| 20 | Proving out a new program | Single block, reduced rapid, distance-to-go, first-piece check; aids never guarantee clearance | Haas operator manual | SEND |
-| 21 | Reading a Haas startup block | G00 G90 G17 G40 G49 G54 explained; not universal | Productivity training manual | SAVE |
-| 22 | Tool wear: flank vs crater vs built-up edge | Recognise the pattern, then the likely cause | Sandvik / Seco wear guides | SAVE |
-| 23 | Running an outdated program | Match program revision to the released drawing revision | Tormach operator-error list | SEND |
-| 24 | Feed override left at 10% or 150% | Check overrides before cycle start | Tormach operator-error list | SAVE |
-| 25 | Chatter and tool stick-out | Shortest practical overhang, rigid holding; other levers | Sandvik troubleshooting | SAVE |
-| 26 | Go / no-go plug gauge for an H7 hole | What each end proves | Gauge maker documentation | SAVE |
-| 27 | H7/g6 in plain words | Hole-basis fit letters and grades; read limits from an ISO 286 table | ISO 286 table source | SAVE |
-| 28 | G17 / G18 / G19 planes | Arc and cutter-comp plane; control-specific | Haas / Productivity manual | SAVE |
-| 29 | Tramming a vise with a dial indicator | Sweep the fixed jaw, adjust, re-check | Manufacturer / training source | SAVE |
-| 30 | "Tell me about your machine" | Controller, travels, tool count, materials – only what you actually ran | Interview-prep sources | SAVE |
-| 31 | Probing a work offset | Cycle measures and updates or only reports, by system; still verify | Renishaw / Haas probing docs | SAVE |
-| 32 | Builder-specific M-codes | Beyond common M-codes, check the manual | Machine manuals | SAVE |
-| 33 | What Ra 1.6 means | Ra in µm; cut-off and evaluation length per drawing standard | Mitutoyo SJ docs | SAVE |
-| 34 | Thread milling vs tapping | When each is chosen; machine and tool limits | Tool maker guidance | SAVE |
-| 35 | 5S on the shop floor | Five steps with one shop example each | Recognised 5S reference | SAVE |
+## Batch 6–15 Nov recovery (all times IST)
 
-Later: G28 intermediate point (label by control), roughing vs finishing, inch ↔ mm, coolant and chip evacuation, edge finder vs probe, weekly recap quiz.
+Content approved in the 5 Nov audit; Johnny directly confirmed the recovery schedule on 14 Nov. The originals uploaded on 15 Nov are preserved under `files/` at commit `e146b933aba38c315f4fcdae73e656492cbf05d3`.
+
+Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-ig-reels/e146b933aba38c315f4fcdae73e656492cbf05d3/files/`. Use `reels/<file>.mp4` and `captions/<file>.txt` relative to this base. Verify exact bytes against `files/reels/SHA256SUMS_batch_19-38_approved.txt` (v2). Root-level media paths are not the source for this recovery batch. Hosting and all 46 package checksums verified on 15 Nov; publication remains pending until the approved times and per-slot checks pass.
+| ID | Topic | Status | Length | Hook | CTA | Spec |
+|---|---|---|---|---|---|---|
+| 22 | What Ra 1.6 means | approved (5 Nov content audit; recovery schedule confirmed 14 Nov; caption v2); original slot 6 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 06:00 IST | 20 s | countdown quiz | SAVE | batchH.py |
+| 19 | Reading a metric vernier caliper (0.02 mm) | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 6 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 06:18 IST | 30 s | wrong vs right | SAVE | batchH.py |
+| 29 | H7 in plain words (ISO 286) | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 7 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 06:36 IST | 30 s | interview question | SAVE | batchJ.py |
+| 20 | Reading a dial indicator (counter + pointer) | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 7 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 06:54 IST | 20 s | cold-open demo | SAVE | batchH.py |
+| 28 | Inch ↔ mm (25.4 exactly; Haas G20/G21) | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 8 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 07:12 IST | 21 s | countdown quiz | SAVE | batchI.py |
+| 24 | Tool wear: flank vs crater vs BUE | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 8 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 07:30 IST | 30 s | interview question | SAVE | batchI.py |
+| 21 | GO / NO-GO plug gauge | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 9 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 07:48 IST | 30 s | interview question | SEND | batchH.py |
+| 30 | What M10 × 1.5 means | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 9 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 08:06 IST | 20 s | countdown quiz | SAVE | batchJ.py |
+| 25 | Chatter and tool stick-out | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 10 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 08:24 IST | 20 s | cold-open demo | SEND | batchI.py |
+| 23 | Height gauge: zero on the plate | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 10 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 08:42 IST | 30 s | cold-open demo | SAVE | batchH.py |
+| 31 | Tap drill size for a cut tap (D − P) | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 11 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 09:00 IST | 30 s | wrong vs right | SEND | batchJ.py |
+| 33 | Edge finder vs probe | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 11 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 09:18 IST | 20 s | interview question | SAVE | batchJ.py |
+| 34 | Feed / rapid override check (Haas mill example) | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 12 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 09:36 IST | 20 s | cold-open demo | SEND | batchK.py |
+| 26 | Roughing vs finishing | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 12 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 09:54 IST | 30 s | wrong vs right | SAVE | batchI.py |
+| 35 | G17 / G18 / G19 planes (Haas mill example) | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 13 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 10:12 IST | 30 s | countdown quiz | SAVE | batchK.py |
+| 27 | Coolant and chip evacuation | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 13 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 10:30 IST | 20 s | cold-open demo | SAVE | batchI.py |
+| 38 | 5S on the shop floor | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 14 Nov 09:00 IST missed (files not hosted) → recovery slot 15 Nov 10:48 IST | 20 s | countdown quiz | SAVE | batchK.py |
+| 32 | Tramming a vise with a dial indicator | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 14 Nov 19:30 IST missed (files not hosted) → recovery slot 15 Nov 11:06 IST | 30 s | cold-open demo | SAVE | batchJ.py |
+| 36 | Haas safe-start line | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); original slot 15 Nov 09:00 IST moved to 15 Nov 11:24 IST to avoid the recovery backlog | 30 s | wrong vs right | SAVE | batchK.py |
+| 37 | "Tell me about your machine" | approved (5 Nov content audit; recovery schedule confirmed 14 Nov); 15 Nov 19:30 IST unchanged | 30 s | interview question | SEND | batchK.py |
+
+## Queue (IDs assigned when produced; verify each teaching point with the named source first)
+- Proving out a new program (single block, reduced rapid, distance-to-go, first-piece check; aids never guarantee clearance) – Haas operator manual
+- Running an outdated program (match program revision to the released drawing revision)
+- Probing a work offset in detail (cycle updates or only reports, by system) – Renishaw / Haas probing docs
+- Builder-specific M-codes (beyond common M-codes, check the manual)
+- Thread milling vs tapping – tool maker guidance
+
+Later: G28 intermediate point (label by control), weekly recap quiz.
