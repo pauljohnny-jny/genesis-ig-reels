@@ -22,8 +22,8 @@ Number = reel ID used in file names. Update this file in the same commit as any 
 | 14 | Toolholder runout (TIR) | live – 2 Nov 2026 |
 | 15 | Reading a metric micrometer | live – 3 Nov 2026 |
 | 16 | Thermal drift: morning vs afternoon part | live – 3 Nov 2026 |
-| 17 | G90 vs G91 (Haas mill example) | approved media – 5 Nov 09:00 IST missed; awaiting Johnny's new publication time · hook: cold-open demo · spec batchG.py |
-| 18 | 0.01 mm = ? µm | approved – 5 Nov 19:30 IST · corrected ÷ 10 export · hook: countdown quiz · spec batchG.py |
+| 17 | G90 vs G91 (Haas mill example) | live – 5 Nov 2026 13:05:05 IST · [permalink](https://www.instagram.com/reel/DfWgcDRAgn_/) · hook: cold-open demo · spec batchG.py |
+| 18 | 0.01 mm = ? µm | live – 5 Nov 2026 19:31:43 IST · [permalink](https://www.instagram.com/reel/DfXMrK8DrTi/) · hook: countdown quiz · spec batchG.py |
 
 ## Queue (take from the top; verify each teaching point with the named source first)
 | ID | Topic | Lesson (no universal tolerances) | Source to verify | CTA |
