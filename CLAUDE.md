@@ -11,6 +11,16 @@ Claude manages production and, with approval, publishing. ChatGPT is the auditor
 5. **Provenance.** Keep content credentials and AI disclosures. Don't strip metadata, don't re-encode an approved file, don't use detection-evasion tools.
 6. **Public repo.** Store only the toolkit, reel specs, captions, PLAN.md and approved MP4s (an MP4 goes into `reels/` only after approval). Analytics, enquiry counts, approvals and internal notes stay in the private claude.ai Project (claude/publication-log.md).
 
+## Session and repository access
+- Start every producer or publisher session, scheduled or manual, with `pauljohnny-jny/genesis-ig-reels` selected as the session's repository. It is the canonical repository.
+- First check access with a read: `git remote get-url origin` names `pauljohnny-jny/genesis-ig-reels` and `git fetch origin main` succeeds.
+- **A stale repository scope is a session fault, not a video fault.** If git or GitHub refuses access with a 403 or "not in this session's authorized repository set", stop. Don't re-render, re-encode, rename or re-upload the reel, don't change its files or PLAN.md status, and don't try other tokens, credentials or upload routes. Report the exact error to Johnny and ask for a fresh session with `pauljohnny-jny/genesis-ig-reels` selected.
+- Push to `main` only if the session allows it. If pushes are limited to a session branch, push there, open a draft PR and report. Never force-push.
+
+## Media source paths
+- **Normal path, every reel except the batch below:** after approval the MP4 goes in `reels/` and the caption in `captions/` (see Publish). An immutable commit-pinned raw URL to those paths (`…/genesis-ig-reels/<commit-sha>/reels/<file>.mp4`) is also valid.
+- **Exception, 15 Nov recovery batch, Reels 19–38 only:** publish from the hash-verified `files/` copies pinned to commit `e146b933aba38c315f4fcdae73e656492cbf05d3`, i.e. `https://raw.githubusercontent.com/pauljohnny-jny/genesis-ig-reels/e146b933aba38c315f4fcdae73e656492cbf05d3/files/reels/<file>.mp4` and `…/files/captions/<file>.txt`. Check the bytes against `files/reels/SHA256SUMS_batch_19-38_approved.txt` (v2) before each slot. Root-level `reels/` and `captions/` are not the source for this batch. `files/` is used only for this batch.
+
 ## Daily run (scheduled, 07:07 IST)
 Prepare the **next day's** two reels: next two `queued` IDs in PLAN.md → verify sources → spec in `toolkit/specs/` → render → QC → caption. Commit specs, captions and PLAN.md (status `draft`), never the MP4. If two or more drafts are already awaiting approval, don't make more – re-send those. Then list new comments on our own reels and draft replies (don't post). Send Johnny one message: files, captions with English meaning, proposed times (09:00 and 19:30 IST next day), reply drafts. After he approves in that session, set wake-ups for the approved times and publish then.
 
@@ -31,7 +41,7 @@ python3 render.py specs/batchE.py 14                 # full MP4 to out/
 `check()` must report 0 issues, and look at both QC sheets before calling a reel done. New reels: add a spec file in `toolkit/specs/` using `gen.py` helpers.
 
 ## Publish (after approval only)
-1. Commit the final MP4 to `reels/` and the caption to `captions/`; push to `main`.
+1. Commit the final MP4 to `reels/` and the caption to `captions/`; push to `main`. (Reels 19–38: nothing to commit; use the pinned `files/` URLs under Media source paths.)
 2. Raw URL: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-ig-reels/main/reels/<file>.mp4`
 3. vidIQ: `vidiq_video_upload` from that URL → `vidiq_instagram_publish_reel` with the approved caption and settings.
 4. Confirm the permalink, then record it in the Project's publication log.
