@@ -1,0 +1,7 @@
+Rev C vs Rev B? பழைய program-ஐ ஓட்டும் முன் drawing revision-உடன் பொருத்துங்கள்.
+
+உதாரணம்: drawing title block-ல் REV C, program header-ல் (PART 101 REV B). Run செய்யவும் வேண்டாம், நீங்களே edit செய்யவும் வேண்டாம்: STOP & ASK – எந்த rev released என்று supervisor அல்லது programmer உறுதிசெய்யட்டும். பழைய rev-படி சரியாக வெட்டினாலும் part reject ஆகலாம் (reel உதாரணம்: Rev B hole Ø8, Rev C hole Ø10). ISO 9001:2015 clause 7.5.3 (control of documented information) specification, work instruction போன்ற ஆவணங்களுக்குப் பொருந்தும்; program-ல் rev எங்கே குறிக்கப்படும், யார் approve செய்வார் என்பது உங்கள் shop procedure-படி. Assumptions: part பெயர், O-number, rev எழுத்துகள், hole அளவுகள் கற்பனை உதாரணங்கள். VMC operator-கள் cycle start-க்கு முன் drawing rev, program rev, released status மூன்றையும் பாருங்கள்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #CNCOperator #EngineeringDrawing

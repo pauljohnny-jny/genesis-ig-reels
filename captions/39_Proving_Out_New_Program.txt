@@ -1,0 +1,7 @@
+To-go 25, gap 20? புதிய program-ஐ prove out செய்வது எப்படி (Haas mill example).
+
+Haas operator's manual-படி DIST TO GO என்பது axes commanded position-ஐ அடைய மீதமுள்ள தூரம். Tool tip part-க்கு 20 mm மேலே இருக்கும்போது DIST TO GO Z -25.000 என்றால், அந்த block tool-ஐ part-க்குள் கொண்டு செல்லும்: 25 − 20 = 5 mm INSIDE. உடனே FEED HOLD அழுத்துங்கள் (axes நிற்கும், spindle தொடர்ந்து சுழலும்). முதல் run-க்கு: GRAPHICS (machine நகராது, path screen-ல்), SINGLE BLOCK (ஒரு CYCLE START = ஒரு block), RAPID 5% / 25%. இவை உதவிகள் மட்டும்; Haas Safe Run கூட "does not prevent crashes" என்று manual சொல்கிறது. முதல் part-ஐ drawing-படி அளந்த பிறகே தொடருங்கள். Assumptions: metric (mm), Haas mill control, schematic உதாரண மதிப்புகள்; key பெயர்கள் control-க்கு control மாறும் – உங்கள் manual-ஐப் பாருங்கள். VMC operator-கள் ஒவ்வொரு step-ஐயும் காரணத்துடன் சொல்லுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCProgramming #CNCSetup
