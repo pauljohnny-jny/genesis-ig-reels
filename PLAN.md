@@ -53,11 +53,11 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 | 36 | Haas safe-start line | live – 15 Nov 2026 11:25:57 IST · [permalink](https://www.instagram.com/reel/DfwE_PeiZx7/) (recovery batch, approved caption matched) | 30 s | wrong vs right | SAVE | batchK.py |
 | 37 | "Tell me about your machine" | live – 15 Nov 2026 19:32:41 IST · [permalink](https://www.instagram.com/reel/Dfw8rxoCMdS/) (recovery batch, approved caption matched) | 30 s | interview question | SEND | batchK.py |
 
-## Drafts awaiting approval (16 Nov run; proposed slots 17 Nov 2026)
+## Drafts awaiting approval (produced 16 Nov; not approved for 17 Nov, re-proposed 18 Nov for 19 Nov 2026)
 | ID | Topic | Status | Length | Hook | CTA | Spec |
 |---|---|---|---|---|---|---|
-| 39 | Proving out a new program (Haas mill example) | draft – proposed 17 Nov 09:00 IST | 28.6 s | cold-open demo | SAVE | batchL.py |
-| 40 | Running an outdated program: drawing rev vs program rev | draft – proposed 17 Nov 19:30 IST | 28.2 s | countdown quiz | SEND | batchL.py |
+| 39 | Proving out a new program (Haas mill example) | draft – re-proposed 19 Nov 09:00 IST (17 Nov slot passed unapproved) | 28.6 s | cold-open demo | SAVE | batchL.py |
+| 40 | Running an outdated program: drawing rev vs program rev | draft – re-proposed 19 Nov 19:30 IST (17 Nov slot passed unapproved) | 28.2 s | countdown quiz | SEND | batchL.py |
 
 ## Queue (IDs assigned when produced; verify each teaching point with the named source first)
 - Probing a work offset in detail (cycle updates or only reports, by system) – Renishaw / Haas probing docs
