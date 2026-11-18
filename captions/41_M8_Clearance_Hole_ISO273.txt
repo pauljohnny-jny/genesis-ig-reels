@@ -1,0 +1,7 @@
+M8 bolt: Ø8 hole? தவறு – M8 bolt-க்கு clearance hole (ISO 273).
+
+ISO 273 clearance hole-களை fine, medium, coarse என மூன்று series-ஆகத் தருகிறது: M8-க்கு Ø8.4 / Ø9 / Ø10 mm. Ø8 hole-ல் clearance இல்லை; hole position சிறிது மாறினாலும் bolt போகாது. Ø9-ல் 9 − 8 = 1 mm, centre-ல் இருந்தால் ஒவ்வொரு பக்கமும் 0.5 mm. Tapped plate-க்கு வேறு hole: M8 × 1.25-க்கு Ø6.8 drill (tap maker data; tap-ஐப் பொறுத்து மாறலாம்). Assumptions: metric M8 coarse thread, general-purpose joint; drawing-ல் கொடுத்த hole size-ஏ இறுதி. VMC operator-கள் drill எடுக்கும் முன் drawing callout-ஐப் படியுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCMachining #Drilling

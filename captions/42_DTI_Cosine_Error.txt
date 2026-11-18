@@ -1,0 +1,7 @@
+0.05 → 0.0435? Dial test indicator cosine error – stylus சாய்ந்தால் reading அதிகமாகக் காட்டும்.
+
+Mitutoyo dial test indicator manual-படி, contact point-ஐ அளக்கும் திசைக்கு right angle-ல் வைக்க முடியாவிட்டால்: true value ≈ reading × k. 30°-க்கு k = 0.87 → 0.05 × 0.87 = 0.0435 mm (தோராயம்). 10° → 0.98, 20° → 0.94, 40° → 0.77. Mitutoyo: stylus-ஐ surface-க்கு முடிந்தவரை இணையாக வையுங்கள் (shank part-ஐத் தொடாமல்), model-க்குரிய length உள்ள contact point மட்டும் பயன்படுத்துங்கள், dial-ஐ நேராகப் பார்த்துப் படியுங்கள். Assumptions: lever-type DTI, metric; reel-ல் angle பெரிதாகக் காட்டப்பட்டுள்ளது. VMC operator-கள் tram, runout check-க்கு முன் stylus angle-ஐப் பாருங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #DialTestIndicator #PrecisionMeasurement

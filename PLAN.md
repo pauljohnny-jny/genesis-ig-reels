@@ -61,10 +61,16 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 
 Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from the vidIQ-hosted copies). Add them unchanged when the bytes are available.
 
-## Queue – 20 to 28 Nov 2026 (two a day, 09:00 and 19:30 IST)
-Take topics in this order; IDs are assigned when produced (next is 41). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
-- 20 Nov 09:00 · Clearance hole for an M8 bolt: not Ø8 – ISO 273 fine 8.4 / medium 9 / coarse 10 mm · wrong vs right · SAVE · ISO 273
-- 20 Nov 19:30 · Dial test indicator cosine error: stylus at 30° → true value ≈ reading × 0.87 · cold-open demo · SAVE · Mitutoyo dial test indicator manual (correction-factor table)
+## Drafts awaiting approval (produced 19 Nov 2026 in a manual session)
+| ID | Topic | Status | Length | Hook | CTA | Spec |
+|---|---|---|---|---|---|---|
+| 41 | Clearance hole for an M8 bolt (ISO 273) | draft – proposed 20 Nov 2026 09:00 IST; sent to Johnny 19 Nov | 28.8 s | wrong vs right | SAVE | batchM.py |
+| 42 | Dial test indicator cosine error | draft – proposed 20 Nov 2026 19:30 IST; sent to Johnny 19 Nov | 28.8 s | cold-open demo | SAVE | batchM.py |
+
+These two wait for Johnny in the 19 Nov session. A daily run must not re-render or re-send them, must not create vidIQ drafts for them, and makes nothing new while they wait. Their vidIQ drafts are created only after Johnny approves the files.
+
+## Queue – 21 to 28 Nov 2026 (two a day, 09:00 and 19:30 IST)
+Take topics in this order; IDs are assigned when produced (next is 43). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
 - 21 Nov 09:00 · Reaming allowance: don't drill to reamer size; leave the maker's stock (e.g. Ø0.2 mm up to Ø10); too little stock → rubbing, undersize · wrong vs right · SAVE · Sandvik Coromant reaming guidance + reamer maker's stock table
 - 21 Nov 19:30 · Caliper: measure close to the beam, not at the jaw tips (Abbe's principle) · cold-open demo · SAVE · Mitutoyo Quick Guide to Precision Measuring Instruments
 - 22 Nov 09:00 · Setting Z with a gauge block: subtract the block height (Haas mill example) · wrong vs right · SAVE · Haas mill operator's manual
