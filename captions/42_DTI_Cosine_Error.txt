@@ -1,0 +1,7 @@
+Dial 0.05, true 0.0435? Dial test indicator cosine error – stylus கோணம் ஏன் முக்கியம்.
+
+Mitutoyo dial test indicator manual-படி: true value (approximate) = reading × k. θ = stylus-க்கும் surface-க்கும் இடையிலான கோணம். 30°-ல் k = 0.87: 0.05 mm × 0.87 = 0.0435 mm. மற்ற மதிப்புகள்: 10° → 0.98, 20° → 0.94 (k ≈ cos θ; Mitutoyo catalogue 30°-ஐ 0.86 என்று round செய்கிறது). Mitutoyo-படி θ-ஐ முடிந்தவரை சிறியதாக வையுங்கள்; 10°-க்குக் குறைவு என்றால் அதன் விளைவைப் புறக்கணிக்கலாம். Assumptions: lever-type DTI, 0.01 mm graduation; k மதிப்புகள் model-ஐப் பொறுத்து மாறலாம் – உங்கள் manual-ஐப் பாருங்கள்; reel drawing schematic, motion பெரிதாகக் காட்டப்பட்டுள்ளது. VMC operator-கள் அளக்கும் முன் stylus கோணத்தைச் சரிசெய்யுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #DialIndicator #PrecisionMeasurement
