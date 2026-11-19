@@ -1,0 +1,7 @@
+M8 bolt → Ø8 hole? M8 bolt-க்கு clearance hole அளவு (ISO 273).
+
+ISO 273-ல் M8-க்கு மூன்று series: fine Ø8.4 (H12), medium Ø9 (H13), coarse Ø10 (H14). Ø8 hole-ல் bolt-க்கு இடைவெளி இல்லை. Medium-ல்: Ø9 − Ø8 = 1 mm → 0.5 mm / side; இரண்டு part-ன் hole position சிறிது மாறினாலும் bolt போக இந்த இடைவெளி உதவும். ISO 273 மதிப்புகள் general purpose-க்கானவை; special job-ல் hole அளவு design requirement-படி தேர்வு செய்யப்படும். Assumptions: metric bolt, general purpose values; reel drawing schematic, அளவுகள் பெரிதாகக் காட்டப்பட்டுள்ளன. VMC operator-கள் drill செய்யும் முன் drawing-ல் உள்ள Ø-ஐப் பாருங்கள்; அளவு இல்லை என்றால் ஊகிக்காமல் கேளுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #EngineeringDrawing #CNCMachining
