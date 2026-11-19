@@ -58,16 +58,13 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 |---|---|---|---|---|---|---|
 | 39 | Proving out a new program (Haas mill example) | live – 19 Nov 2026 09:00:27 IST · [permalink](https://www.instagram.com/reel/Df6Hk2BitOI/) (approved caption matched) | 28.6 s | cold-open demo | SAVE | batchL.py |
 | 40 | Running an outdated program: drawing rev vs program rev | approved 19 Nov – vidIQ scheduled 19 Nov 2026 19:30 IST | 28.2 s | countdown quiz | SEND | batchL.py |
+| 41 | Clearance hole for an M8 bolt (ISO 273: 8.4 / 9 / 10 mm) | approved 19 Nov – vidIQ scheduled 20 Nov 2026 09:00 IST · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchM.py |
+| 42 | Dial test indicator cosine error (30° → × 0.87, Mitutoyo DTI manual) | approved 19 Nov – vidIQ scheduled 20 Nov 2026 19:30 IST · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchM.py |
 
 Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from the vidIQ-hosted copies). Add them unchanged when the bytes are available.
 
-## Drafts awaiting Johnny's approval (proposed slots IST)
-| ID | Topic | Status | Length | Hook | CTA | Spec |
-|---|---|---|---|---|---|---|
-| 41 | Clearance hole for an M8 bolt (ISO 273: 8.4 / 9 / 10 mm) | draft – proposed 20 Nov 2026 09:00 IST | 28.2 s | wrong vs right | SAVE | batchM.py |
-| 42 | Dial test indicator cosine error (30° → × 0.87, Mitutoyo DTI manual) | draft – proposed 20 Nov 2026 19:30 IST | 28.2 s | cold-open demo | SAVE | batchM.py |
-
-These are the 19 Nov 07:07 run's versions (the only versions in use). Johnny approves them in that run's conversation; a later run must not re-render them or create more vidIQ drafts for them, and makes nothing new while they wait.
+## Drafts awaiting approval (proposed slots IST)
+None at present. (Reels 41–42 were the 19 Nov 07:07 run's versions; approved and scheduled, see above.)
 
 ## Queue – 21 to 28 Nov 2026 (two a day, 09:00 and 19:30 IST)
 Take topics in this order; IDs are assigned when produced (next is 43). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
