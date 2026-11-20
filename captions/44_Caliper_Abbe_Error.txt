@@ -1,0 +1,7 @@
+Tip-ல் 0.008 mm பிழை? Caliper-ல் Abbe error – part-ஐ beam-க்கு அருகில் வைப்பது ஏன்.
+
+Abbe's principle: scale axis-ம் measuring line-ம் ஒரே வரியில் இருக்கும்போது accuracy அதிகம். Caliper-ல் scale beam-ல், அளவு jaw-ல் – இடைவெளி h. Mitutoyo Quick Guide உதாரணம்: slider tilt 0.01 mm in 50 mm, jaw 40 mm ஆழம் → error = h × tilt = 40 × 0.01 ÷ 50 = 0.008 mm (jaw tip-ல்). அதே tilt-ல் h 10 mm என்றால் 10 × 0.01 ÷ 50 = 0.002 mm. Caliper-ல் constant-force device இல்லை, எனவே சீரான force-ல் அளவுங்கள்; jaw root அல்லது tip-ல் அளக்கும்போது கூடுதல் கவனம் (Mitutoyo). Assumptions: metric (mm), Mitutoyo உதாரண tilt மதிப்பு; உங்கள் caliper-ன் tilt வேறாக இருக்கலாம்; reel drawing schematic, tilt பெரிதாகக் காட்டப்பட்டுள்ளது. VMC operator-கள் part-ஐ beam பக்கம் வைத்து அளவுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #Caliper #PrecisionMeasurement
