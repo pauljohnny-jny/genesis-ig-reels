@@ -1,0 +1,7 @@
+Ø10 reamer, Ø10 drill? Reaming-க்கு முன் எவ்வளவு stock விட வேண்டும்.
+
+Sandvik Coromant reaming table-படி P1 steel-ல் Ø5.1–10 hole-க்கு stock 0.2 mm: Ø10 reamer-க்கு Ø9.8 drill, stock = reamer Ø − drill Ø = 10 − 9.8 = 0.2 mm. Reamer அளவுக்கே drill செய்தால் stock இல்லை: reamer cut செய்யாமல் rub ஆகும், விரைவில் தேயும், hole diameter குறையும் (undersize). அதிக stock விடுவதும் நல்லதல்ல. Stock அளவு material, pre-drilled hole finish-ஐப் பொறுத்து மாறும்; reaming pilot hole-ன் position அல்லது straightness பிழையைத் திருத்தாது (Sandvik: straightness < 0.05 mm). Assumptions: machine reaming, metric, unalloyed steel (P1), stock diameter-ல் கணக்கிடப்பட்டது; உங்கள் reamer maker-ன் table-ஐப் பாருங்கள்; reel drawing schematic, stock பெரிதாகக் காட்டப்பட்டுள்ளது. VMC operator-கள் ream செய்யும் முன் drill Ø-ஐ உறுதிசெய்யுங்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #CNCMachining #Reaming

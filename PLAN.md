@@ -57,19 +57,20 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 | ID | Topic | Status | Length | Hook | CTA | Spec |
 |---|---|---|---|---|---|---|
 | 39 | Proving out a new program (Haas mill example) | live – 19 Nov 2026 09:00:27 IST · [permalink](https://www.instagram.com/reel/Df6Hk2BitOI/) (approved caption matched) | 28.6 s | cold-open demo | SAVE | batchL.py |
-| 40 | Running an outdated program: drawing rev vs program rev | approved 19 Nov – vidIQ scheduled 19 Nov 2026 19:30 IST | 28.2 s | countdown quiz | SEND | batchL.py |
+| 40 | Running an outdated program: drawing rev vs program rev | live – 19 Nov 2026 19:30:34 IST · [permalink](https://www.instagram.com/reel/Df7Pr_SEgQJ/) (approved caption matched) | 28.2 s | countdown quiz | SEND | batchL.py |
 | 41 | Clearance hole for an M8 bolt (ISO 273: 8.4 / 9 / 10 mm) | approved 19 Nov – vidIQ scheduled 20 Nov 2026 09:00 IST · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchM.py |
 | 42 | Dial test indicator cosine error (30° → × 0.87, Mitutoyo DTI manual) | approved 19 Nov – vidIQ scheduled 20 Nov 2026 19:30 IST · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchM.py |
 
 Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from the vidIQ-hosted copies). Add them unchanged when the bytes are available.
 
 ## Drafts awaiting approval (proposed slots IST)
-None at present. (Reels 41–42 were the 19 Nov 07:07 run's versions; approved and scheduled, see above.)
+| ID | Topic | Status | Length | Hook | CTA | Spec |
+|---|---|---|---|---|---|---|
+| 43 | Reaming stock allowance: Ø10 reamer → Ø9.8 drill (Sandvik P1 table, 0.2 mm) | draft – proposed 21 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | wrong vs right | SAVE | batchN.py |
+| 44 | Caliper: measure close to the beam (Abbe's principle, Mitutoyo 0.008 mm example) | draft – proposed 21 Nov 2026 19:30 IST · private vidIQ draft | 28.2 s | cold-open demo | SAVE | batchN.py |
 
-## Queue – 21 to 28 Nov 2026 (two a day, 09:00 and 19:30 IST)
-Take topics in this order; IDs are assigned when produced (next is 43). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
-- 21 Nov 09:00 · Reaming allowance: don't drill to reamer size; leave the maker's stock (e.g. Ø0.2 mm up to Ø10); too little stock → rubbing, undersize · wrong vs right · SAVE · Sandvik Coromant reaming guidance + reamer maker's stock table
-- 21 Nov 19:30 · Caliper: measure close to the beam, not at the jaw tips (Abbe's principle) · cold-open demo · SAVE · Mitutoyo Quick Guide to Precision Measuring Instruments
+## Queue – 22 to 28 Nov 2026 (two a day, 09:00 and 19:30 IST)
+Take topics in this order; IDs are assigned when produced (next is 45). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
 - 22 Nov 09:00 · Setting Z with a gauge block: subtract the block height (Haas mill example) · wrong vs right · SAVE · Haas mill operator's manual
 - 22 Nov 19:30 · Thread plug gauge GO / NOT GO: GO runs the full length; NOT GO no more than two turns (ISO metric) · interview question · SAVE · ISO 1502 / gauge maker's instructions
 - 23 Nov 09:00 · Blind-hole tapping: drill deeper than the thread (full thread + tap chamfer + at least one pitch) · cold-open demo · SEND · Kennametal tapping tech tip / OSG tap technical data
