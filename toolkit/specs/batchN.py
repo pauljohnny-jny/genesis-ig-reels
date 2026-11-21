@@ -36,8 +36,10 @@ def reamer(x, y, w=100, h=230):
 #   Sandvik Coromant, "Troubleshooting reaming": undersized bore and chattermarks both list "Allowance for reaming is too small".
 #   Taylor & Jones reamer technical section (reamer maker) gives the same warning and a free-cutting mild steel guide
 #     (over 6 up to 12 mm dia: 0.2-0.3 mm), consistent with Sandvik.
+#   Rev 2 (21 Nov, ChatGPT review): WHY card and caption use risk language (rubbing / wear / size-finish risk), not a
+#     categorical undersize claim.
 #   Stock is shown as reamer Ø − pre-drill Ø (Ø10 − Ø9.8 = 0.2 mm), the reading of the table stated in the caption.
-R43_H = dict(hook="Ø10 reamer, Ø10 drill?", hsize=72, hook2="Stock 0 → reamer rub ஆகும்!", h2size=50, s=0, e=4.2, svg=f'''
+R43_H = dict(hook="Ø10 reamer, Ø10 drill?", hsize=72, hook2="Stock 0 → reamer rub ஆகலாம்!", h2size=44, s=0, e=4.2, svg=f'''
 <text class="fig" x="24" y="44">SECTION · SCHEMATIC · mm</text><text class="fig" x="754" y="44" text-anchor="end" style="fill:{OR}">SANDVIK · P1 STEEL</text>
 <text x="200" y="100" text-anchor="middle" style="font:800 34px Inter" fill="{RED}">WRONG</text>
 <text x="580" y="100" text-anchor="middle" style="font:800 34px Inter" fill="{GRN}">RIGHT</text>
@@ -50,7 +52,7 @@ R43_H = dict(hook="Ø10 reamer, Ø10 drill?", hsize=72, hook2="Stock 0 → reame
 <g class="shake" data-t="1.3"><g class="move" data-t="0" data-d="1.3" data-dy="60">{reamer(150, 200)}</g></g>
 <g class="move" data-t="0" data-d="1.6" data-dy="100">{reamer(530, 200)}</g>
 <text x="200" y="600" text-anchor="middle" style="font:700 26px Inter" fill="#fff">DRILL Ø10 · REAM Ø10</text>
-<text x="200" y="640" text-anchor="middle" style="font:800 28px Inter" fill="{RED}">STOCK 0 → RUBS</text>
+<text x="200" y="640" text-anchor="middle" style="font:800 28px Inter" fill="{RED}">STOCK 0 → RUBBING RISK</text>
 <text x="580" y="600" text-anchor="middle" style="font:700 26px Inter" fill="#fff">DRILL Ø9.8 · REAM Ø10</text>
 <text x="580" y="640" text-anchor="middle" style="font:800 28px Inter" fill="{GRN}">0.2 mm STOCK → CUTS</text>
 {cross(330, 350, 1.4)}{tick(712, 350, 1.7)}
@@ -66,12 +68,12 @@ R43 = dict(id="43", slug="Reaming_Stock_Allowance", scenes=[
                     for k, (d, v, hl) in enumerate([("1 – 3", "0.1 – 0.2", 0), ("3 – 5", "0.1 – 0.2", 0), ("5.1 – 10", "0.2", 1),
                                                     ("10.1 – 20", "0.2 – 0.3", 0), ("20.1 – 30", "0.3 – 0.4", 0), ("> 30", "0.4 – 0.5", 0)])),
       body="Stock = reamer Ø − drill Ø = 0.2 mm.", body_t=1.4),
- dict(s=10.2, e=16.4, tag="WHY  /  03", title="Too little = rubbing", tsize=70, sub="Stock குறைந்தால்?", ssize=48,
+ dict(s=10.2, e=16.4, tag="WHY  /  03", title="Too little = risk", tsize=70, sub="Stock குறைந்தால்?", ssize=48,
       svg=fig("SANDVIK COROMANT", "TROUBLESHOOTING", orange=True)
           + "".join(f'''<g class="a" data-t="{0.2 + k*0.4:.2f}">{box(40, 66 + k*96, 698, 80, RED, 3)}
 <text x="70" y="{117 + k*96}" style="font:800 34px Inter" fill="{RED}">{lab}</text>
 <text x="708" y="{117 + k*96}" text-anchor="end" style="font:600 26px Plex" fill="#FFD2C9">{note}</text></g>'''
-                    for k, (lab, note) in enumerate([("REAMER RUBS", "NOT CUTTING"), ("WEARS QUICKLY", "SHORT LIFE"), ("LOSS OF DIAMETER", "UNDERSIZE")]))
+                    for k, (lab, note) in enumerate([("RUBBING RISK", "MAY NOT CUT"), ("FASTER WEAR", "SHORTER LIFE"), ("SIZE ERROR RISK", "FINISH / SIZE")]))
           + f'''<g class="a" data-t="1.5">{box(40, 362, 698, 80, OR, 3)}
 <text x="389" y="414" text-anchor="middle" style="font:800 32px Inter" fill="{OR}">TOO MUCH STOCK: ALSO BAD</text></g>''',
       body="அதிக stock-ம் நல்லதல்ல: maker table-படி.", body_t=1.9),
@@ -106,6 +108,8 @@ R43 = dict(id="43", slug="Reaming_Stock_Allowance", scenes=[
 #     "Take extra care when you measure it with the root or tip of the jaw because a large error could occur."
 #   Mitutoyo "Calipers" (E12029): the caliper does not comply with Abbe's Principle because its scale is not coaxial with
 #     the measurement axis.
+#   Rev 2 (21 Nov, ChatGPT review): force note scoped to a standard caliper (Mitutoyo also sells constant-force
+#     models, e.g. ABSOLUTE Low Force caliper); final card marks 0.008 / 0.002 mm as same-tilt example values.
 #   h = 10 mm → 10 × 0.01 ÷ 50 = 0.002 mm is the same Mitutoyo formula with a smaller h (our arithmetic, same tilt).
 R44_H = dict(hook="Tip-ல் 0.008 mm பிழை?", hsize=64, hook2="Abbe error: h முக்கியம்!", h2size=56, s=0, e=4.2, svg=f'''
 <text class="fig" x="24" y="44">CALIPER · SCHEMATIC</text><text class="fig" x="754" y="44" text-anchor="end" style="fill:{OR}">MITUTOYO EXAMPLE</text>
@@ -161,13 +165,15 @@ R44 = dict(id="44", slug="Caliper_Abbe_Error", scenes=[
           + checkrow(115, 1, "SMALL h", "Part-ஐ beam பக்கம் வையுங்கள்", 0.2)
           + checkrow(255, 2, "EVEN FORCE", "அதிகமாக அழுத்தாதீர்கள்", 0.7)
           + checkrow(395, 3, "ROOT / TIP OF JAW", "கூடுதல் கவனம் (Mitutoyo)", 1.2),
-      body="Caliper-ல் constant-force device இல்லை.", body_t=1.7),
- dict(s=22.6, e=28.2, tag="REMEMBER  /  05", title="Interview answer", tsize=72, sub="Tip-ல் 0.008, beam அருகில் 0.002", ssize=42,
+      body="சாதாரண caliper: force-ஐ நீங்களே சீராக வையுங்கள்.", body_t=1.7),
+ dict(s=22.6, e=28.2, tag="REMEMBER  /  05", title="Interview answer", tsize=72, sub="h சிறிது → பிழை சிறிது.", ssize=46,
       svg=fig("HOW TO ANSWER") + chip(40, 66, 250, "SMALL h", 0.1, GRN, GRN) + chip(308, 66, 430, "ERROR = h × TILT", 0.25, OR, OR)
           + chip(40, 150, 698, "ABBE'S PRINCIPLE · MITUTOYO", 0.4) + '''
 <text class="w a" data-t="0.8" x="40" y="300" style="font-size:30px">"Scale-ம் அளவும் ஒரே வரியில் இல்லை;</text>
 <text class="w a" data-t="0.8" x="40" y="346" style="font-size:30px"> part-ஐ beam அருகில் வைப்பேன்."</text>
-<text class="m a" data-t="1.2" x="40" y="440" style="font-size:22px">VERNIER / DIAL / DIGITAL CALIPER · mm</text>''',
+<text class="w a" data-t="1.0" x="40" y="404" style="font-size:28px;fill:#F5A04A">இந்த உதாரணத்தில்: tip-ல் 0.008 mm;</text>
+<text class="w a" data-t="1.0" x="40" y="444" style="font-size:28px;fill:#F5A04A"> beam அருகில் 0.002 mm (same tilt).</text>
+<text class="m a" data-t="1.2" x="40" y="490" style="font-size:22px">EXAMPLE VALUES · MITUTOYO QUICK GUIDE · mm</text>''',
       cta=True, cta_t=1.6),
 ])
 
