@@ -66,13 +66,13 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from the vidIQ-hosted copies). Add them unchanged when the bytes are available.
 
 ## Drafts awaiting approval (proposed slots IST)
-None at present. (Reels 43–44 rev 2 approved and archived, see above.)
+| ID | Topic | Status | Length | Hook | CTA | Spec |
+|---|---|---|---|---|---|---|
+| 45 | Thread plug gauge GO / NOT GO: GO full length, NOT GO ≤ 2 turns (ISO 1502) | draft – proposed 23 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | interview question | SAVE | batchO.py |
+| 46 | Blind-hole tapping: drill ≥ thread + chamfer + 1 pitch (Kennametal Tech Tip #65; M8 × 1.25 → 17 mm) | draft – proposed 23 Nov 2026 19:30 IST · private vidIQ draft | 28.2 s | cold-open demo | SEND | batchO.py |
 
-## Queue – 22 to 28 Nov 2026 (two a day, 09:00 and 19:30 IST)
-Take topics in this order; IDs are assigned when produced (next is 45). Slot dates below are targets: Reels 43–44 were re-slotted to 22 Nov after audit corrections, so each queued topic moves one day later. Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
-- 22 Nov 09:00 · Setting Z with a gauge block: subtract the block height (Haas mill example) · wrong vs right · SAVE · Haas mill operator's manual
-- 22 Nov 19:30 · Thread plug gauge GO / NOT GO: GO runs the full length; NOT GO no more than two turns (ISO metric) · interview question · SAVE · ISO 1502 / gauge maker's instructions
-- 23 Nov 09:00 · Blind-hole tapping: drill deeper than the thread (full thread + tap chamfer + at least one pitch) · cold-open demo · SEND · Kennametal tapping tech tip / OSG tap technical data
+## Queue – from 24 Nov 2026 (two a day, 09:00 and 19:30 IST)
+Take topics in this order; IDs are assigned when produced (next is 47). Slot dates below are targets and now run two days later than written (43–44 re-slotted to 22 Nov; 45–46 drafted for 23 Nov). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
 - 23 Nov 19:30 · ISO material groups P M K N S H and their colour codes · countdown quiz · SAVE · ISO 513 / Sandvik Coromant (confirm colours; makers differ for S and H)
 - 24 Nov 09:00 · Bore gauge: zero on the setting ring and read at the turning point while rocking (smallest diameter) · cold-open demo · SAVE · Mitutoyo bore gauge instructions (Mitutoyo calls it the highest displayed value – word it carefully)
 - 24 Nov 19:30 · G28 Z0 vs G91 G28 Z0: the intermediate point (label by control) · wrong vs right · SEND · Haas G28 code reference
@@ -85,4 +85,4 @@ Take topics in this order; IDs are assigned when produced (next is 45). Slot dat
 - 28 Nov 09:00 · 25–50 mm micrometer: zero check reads 25.000 on the setting standard, not 0.000 · wrong vs right · SAVE · Mitutoyo micrometer instructions
 - 28 Nov 19:30 · Recap quiz: tap drill size (D − P), dial indicator reading, vernier reading · countdown quiz · SAVE · sources of Reels 31, 20 and 19
 
-Later: probing a work offset in detail (cycle updates or only reports, by system – Renishaw / Haas probing docs); builder-specific M-codes (beyond common M-codes, check the manual).
+Later: setting Z with a gauge block – subtract the block height (Haas mill example) · wrong vs right · SAVE · Haas mill operator's manual + Setting 64 (deferred 22 Nov: Haas manual pages could not be read from the producer session, so the Haas-specific offset steps were not verified; produce when they can be). Probing a work offset in detail (cycle updates or only reports, by system – Renishaw / Haas probing docs); builder-specific M-codes (beyond common M-codes, check the manual).

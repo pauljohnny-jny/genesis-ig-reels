@@ -1,0 +1,7 @@
+NOT GO: எத்தனை turns? Thread plug gauge GO / NOT GO – internal thread-ஐ check செய்வது எப்படி.
+
+ISO 1502-படி GO end கையால், அதிக force இல்லாமல் workpiece thread-ன் முழு நீளமும் போக வேண்டும்; போகவில்லை என்றால் thread reject. NOT GO end ஒவ்வொரு பக்கமும் அதிகபட்சம் 2 turns வரை நுழையலாம்; 2 turns-க்கு மேல் போனால் reject. GO end minimum pitch Ø (virtual) மற்றும் minimum major Ø-ஐ check செய்கிறது, minor Ø-ஐ அல்ல; NOT GO end maximum pitch Ø-ஐ check செய்கிறது. 2 turns அனுமதி ஏன்: hole-ன் முதல் threads முழுமையாக இருக்காது (gauge maker Thread Check). GO gauge-ஐ wear-க்கு regular-ஆக check செய்யுங்கள். Assumptions: ISO metric internal thread; inch thread gauge விதிகள் வேறு (ASME B1.2: 3 turns); reel drawing schematic. VMC operator-கள் gauge-ஐ wrench-ஆல் திருகாதீர்கள்.
+
+நேர்முகத் தேர்வுக்கு முன் பார்க்க இந்தப் பதிவை save செய்யுங்கள்.
+
+#VMCOperator #ThreadGauge #QualityInspection
