@@ -60,8 +60,9 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 | 40 | Running an outdated program: drawing rev vs program rev | live – 19 Nov 2026 19:30:34 IST · [permalink](https://www.instagram.com/reel/Df7Pr_SEgQJ/) (approved caption matched) | 28.2 s | countdown quiz | SEND | batchL.py |
 | 41 | Clearance hole for an M8 bolt (ISO 273: 8.4 / 9 / 10 mm) | live – 20 Nov 2026 09:00:33 IST · [permalink](https://www.instagram.com/reel/Df8sX3Ygs02/) (approved caption matched) · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchM.py |
 | 42 | Dial test indicator cosine error (30° → × 0.87, Mitutoyo DTI manual) | live – 20 Nov 2026 19:31:31 IST · [permalink](https://www.instagram.com/reel/Df90kT9CbkV/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchM.py |
-| 43 | Reaming stock allowance: Ø10 reamer → Ø9.8 drill (Sandvik P1 table, 0.2 mm) | approved 22 Nov (exact rev 2, delegated review) – vidIQ scheduled 22 Nov 2026 09:00 IST (pending, not live) · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchN.py |
-| 44 | Caliper: measure close to the beam (Abbe's principle, Mitutoyo 0.008 mm example) | approved 22 Nov (exact rev 2, delegated review) – vidIQ scheduled 22 Nov 2026 19:30 IST (pending, not live) · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchN.py |
+| 43 | Reaming stock allowance: Ø10 reamer → Ø9.8 drill (Sandvik P1 table, 0.2 mm) | live – 22 Nov 2026 09:00:28 IST · [permalink](https://www.instagram.com/reel/DgB19d1DNvd/) (approved caption matched) · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchN.py |
+| 44 | Caliper: measure close to the beam (Abbe's principle, Mitutoyo 0.008 mm example) | live – 22 Nov 2026 19:31:48 IST · [permalink](https://www.instagram.com/reel/DgC-N0qlc0y/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchN.py |
+| 46 | Blind-hole tapping: drill ≥ thread + chamfer + 1 pitch (Kennametal Tech Tip #65; M8 × 1.25 → 17 mm) | approved 23 Nov (exact version, delegated review) – vidIQ scheduled 23 Nov 2026 19:30 IST (pending, not live) · MP4 in reels/ | 28.2 s | cold-open demo | SEND | batchO.py |
 
 Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from the vidIQ-hosted copies). Add them unchanged when the bytes are available.
 
@@ -69,7 +70,6 @@ Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from
 | ID | Topic | Status | Length | Hook | CTA | Spec |
 |---|---|---|---|---|---|---|
 | 45 | Thread plug gauge GO / NOT GO: GO full length, NOT GO ≤ 2 turns (ISO 1502) | draft – proposed 23 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | interview question | SAVE | batchO.py |
-| 46 | Blind-hole tapping: drill ≥ thread + chamfer + 1 pitch (Kennametal Tech Tip #65; M8 × 1.25 → 17 mm) | draft – proposed 23 Nov 2026 19:30 IST · private vidIQ draft | 28.2 s | cold-open demo | SEND | batchO.py |
 
 ## Queue – from 24 Nov 2026 (two a day, 09:00 and 19:30 IST)
 Take topics in this order; IDs are assigned when produced (next is 47). Slot dates below are targets and now run two days later than written (43–44 re-slotted to 22 Nov; 45–46 drafted for 23 Nov). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
