@@ -69,11 +69,11 @@ Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from
 ## Drafts awaiting approval (proposed slots IST)
 | ID | Topic | Status | Length | Hook | CTA | Spec |
 |---|---|---|---|---|---|---|
-| 45 | Thread plug gauge GO / NOT GO: GO full length, NOT GO ≤ 2 turns (ISO 1502) | draft – proposed 23 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | interview question | SAVE | batchO.py |
+| 45 | Thread plug gauge GO / NOT GO: GO full length, NOT GO ≤ 2 turns, short-thread rule (ISO 1502:1996) | draft rev 2 (audit corrections) – proposed 24 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | interview question | SAVE | batchO.py |
+| 47 | ISO material groups P M K N S H and colour codes (ISO 513:2012; K = cast iron, red) | draft – proposed 24 Nov 2026 19:30 IST · private vidIQ draft | 28.2 s | countdown quiz | SAVE | batchP.py |
 
-## Queue – from 24 Nov 2026 (two a day, 09:00 and 19:30 IST)
-Take topics in this order; IDs are assigned when produced (next is 47). Slot dates below are targets and now run two days later than written (43–44 re-slotted to 22 Nov; 45–46 drafted for 23 Nov). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
-- 23 Nov 19:30 · ISO material groups P M K N S H and their colour codes · countdown quiz · SAVE · ISO 513 / Sandvik Coromant (confirm colours; makers differ for S and H)
+## Queue – from 25 Nov 2026 (two a day, 09:00 and 19:30 IST)
+Take topics in this order; IDs are assigned when produced (next is 48). Slot dates below are targets and now run about a day later than written (45 rev 2 and 47 drafted for 24 Nov). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
 - 24 Nov 09:00 · Bore gauge: zero on the setting ring and read at the turning point while rocking (smallest diameter) · cold-open demo · SAVE · Mitutoyo bore gauge instructions (Mitutoyo calls it the highest displayed value – word it carefully)
 - 24 Nov 19:30 · G28 Z0 vs G91 G28 Z0: the intermediate point (label by control) · wrong vs right · SEND · Haas G28 code reference
 - 25 Nov 09:00 · Spot drill angle equal to or slightly larger than the drill point angle (e.g. 118° drill → 120° spot) · countdown quiz · SAVE · ISCAR drilling handbook / drill maker

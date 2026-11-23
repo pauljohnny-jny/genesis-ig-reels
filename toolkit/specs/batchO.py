@@ -47,6 +47,12 @@ def plug_gauge(cx, top, go_h=120, hd_h=140, ng_h=80, w=84):
 #   7.2.2 NOT GO screw plug gauge: a) "checks whether the actual pitch diameter exceeds the specified maximum size."
 #     c) "screwed by hand, without using excessive force, may enter into both ends of the threaded part, but not more than two
 #     turns of thread. If it can be screwed in more than two turns of thread, the workpiece thread does not comply."
+# REV 2 (23 Nov 2026, after ChatGPT CHANGES REQUIRED on rev 2f9380d3): re-read ISO 1502:1996 sample (cdn.standards.iteh.ai
+#   samples/6092): 7.2.1 c) GO "shall enter the whole length of the workpiece thread"; 7.2.2 c) NOT GO by hand, no excessive
+#   force, "may enter into both ends of the threaded part, but by not more than two turns of thread" – footnote 6 "The two
+#   turns of thread are determined when withdrawing the gauge" – and "shall not pass completely through a workpiece with a
+#   length of thread of three threads or less"; 7.2.2 b) NOT GO checked regularly for wear. Added the short-thread rule and
+#   withdrawal counting; replaced "BOTH PASS"; removed the inch aside.
 #   Secondary: Thread Check Inc. (gauge maker) in Quality Magazine "Internal part thread inspection": metric No-Go plug may
 #     enter up to two turns; inch (ASME B1.2) up to three – so the reel states "ISO METRIC".
 R45_H = dict(hook="NOT GO: எத்தனை turns?", hsize=58, hook2="Interview கேள்வி · ISO metric", h2size=44, s=0, e=4.2, svg=f'''
@@ -66,15 +72,17 @@ R45 = dict(id="45", slug="Thread_Plug_Gauge_GO_NOT_GO", scenes=[
  R45_H,
  dict(s=4.2, e=10.2, tag="ANSWER  /  02", title="NOT GO ≤ 2 turns", tsize=74, sub="அதற்கு மேல் போனால் REJECT.", ssize=46,
       svg=fig("ISO 1502 · CLAUSE 7.2", "INTERNAL THREAD", orange=True) + f'''
-<g class="a" data-t="0.2">{box(40, 70, 698, 170, GRN, 3)}
-<text x="66" y="122" style="font:800 36px Inter" fill="{GRN}">GO END</text>
-<text x="66" y="172" style="font:700 30px Inter" fill="#fff">WHOLE THREAD LENGTH</text>
-<text x="66" y="216" style="font:600 25px Plex" fill="#BFD6E8">MUST PASS · BY HAND</text></g>
-<g class="a" data-t="0.8">{box(40, 262, 698, 170, RED, 3)}
-<text x="66" y="314" style="font:800 36px Inter" fill="{RED}">NOT GO END</text>
-<text x="66" y="364" style="font:700 30px Inter" fill="#fff">MAX 2 TURNS · EACH END</text>
-<text x="66" y="408" style="font:600 25px Plex" fill="#BFD6E8">MORE THAN 2 → REJECT</text></g>
-<text class="m a" data-t="1.2" x="389" y="482" text-anchor="middle" style="font-size:22px">BY HAND · NO EXCESSIVE FORCE</text>''',
+<g class="a" data-t="0.2">{box(40, 62, 698, 120, GRN, 3)}
+<text x="66" y="108" style="font:800 32px Inter" fill="{GRN}">GO END</text>
+<text x="66" y="156" style="font:700 27px Inter" fill="#fff">ENTERS WHOLE THREAD LENGTH</text></g>
+<g class="a" data-t="0.8">{box(40, 194, 698, 160, RED, 3)}
+<text x="66" y="240" style="font:800 32px Inter" fill="{RED}">NOT GO END</text>
+<text x="66" y="286" style="font:700 27px Inter" fill="#fff">MAX 2 TURNS · EACH END</text>
+<text x="66" y="328" style="font:600 23px Plex" fill="#BFD6E8">TURNS COUNTED ON WITHDRAWAL</text></g>
+<g class="a" data-t="1.3">{box(40, 366, 698, 96, OR, 3)}
+<text x="66" y="406" style="font:700 24px Inter" fill="{OR}">SHORT THREAD (≤ 3 THREADS):</text>
+<text x="66" y="442" style="font:700 24px Inter" fill="#fff">NOT GO MUST NOT PASS THROUGH</text></g>
+<text class="m a" data-t="1.6" x="389" y="488" text-anchor="middle" style="font-size:20px">BY HAND · NO EXCESSIVE FORCE · ISO 1502:1996</text>''',
       body="ISO 1502: கையால், அதிக force இல்லாமல்.", body_t=1.5),
  dict(s=10.2, e=16.4, tag="WHY  /  03", title="Two limits", tsize=80, sub="GO = min · NOT GO = max", ssize=48,
       svg=fig("WHAT EACH END CHECKS", "ISO 1502", orange=True) + f'''
@@ -86,21 +94,22 @@ R45 = dict(id="45", slug="Thread_Plug_Gauge_GO_NOT_GO", scenes=[
 <g class="a" data-t="0.8">{box(40, 236, 698, 110, RED, 3)}
 <text x="66" y="300" style="font:800 30px Inter" fill="{RED}">NOT GO</text>
 <text x="210" y="300" style="font:700 28px Inter" fill="#fff">MAX PITCH Ø (ACTUAL)</text></g>
-<g class="a" data-t="1.3">{box(40, 366, 698, 110, OR, 3)}
-<text x="389" y="432" text-anchor="middle" style="font:800 30px Inter" fill="{OR}">BOTH PASS → THREAD IN LIMITS</text></g>''',
+<g class="a" data-t="1.3">{box(40, 366, 698, 120, OR, 3)}
+<text x="389" y="412" text-anchor="middle" style="font:700 25px Inter" fill="#fff">GO GOES THROUGH + NOT GO ≤ 2 TURNS</text>
+<text x="389" y="456" text-anchor="middle" style="font:800 28px Inter" fill="{OR}">→ THREAD IN LIMITS</text></g>''',
       body="2 turns ஏன்? முதல் threads முழுமையாக இருக்காது.", body_t=1.7),
  dict(s=16.4, e=22.6, tag="CHECK  /  04", title="Gauge it right", tsize=80, sub="மூன்று பழக்கம்.", ssize=50,
       svg=fig("THREAD PLUG GAUGE") + '<path d="M30 190H748M30 330H748" stroke="#2E5878" stroke-width="2"/>'
           + checkrow(115, 1, "BY HAND, NO FORCE", "Wrench, அதிக force வேண்டாம்", 0.2)
           + checkrow(255, 2, "GO: FULL LENGTH", "முழு thread நீளமும் போக வேண்டும்", 0.7)
           + checkrow(395, 3, "NOT GO: BOTH ENDS", "ஒவ்வொரு பக்கமும் ≤ 2 turns", 1.2),
-      body="GO gauge-ஐ wear-க்கு regular-ஆக check செய்யுங்கள்.", body_t=1.7),
+      body="Gauge-களை wear-க்கு regular-ஆக check செய்யுங்கள்.", body_t=1.7),
  dict(s=22.6, e=28.2, tag="REMEMBER  /  05", title="Interview answer", tsize=72, sub="NOT GO: 2 turns வரை மட்டும்.", ssize=44,
       svg=fig("HOW TO ANSWER") + chip(40, 66, 330, "GO: FULL LENGTH", 0.1, GRN, GRN) + chip(388, 66, 350, "NOT GO ≤ 2 TURNS", 0.25, RED, RED)
           + chip(40, 150, 698, "ISO 1502 · METRIC INTERNAL THREAD", 0.4) + '''
 <text class="w a" data-t="0.8" x="40" y="300" style="font-size:30px">"GO முழுதும் கையால் போக வேண்டும்;</text>
 <text class="w a" data-t="0.8" x="40" y="346" style="font-size:30px"> NOT GO 2 turns-க்கு மேல் போனால் reject."</text>
-<text class="m a" data-t="1.2" x="40" y="440" style="font-size:22px">INCH THREADS: DIFFERENT RULE</text>''',
+<text class="m a" data-t="1.2" x="40" y="440" style="font-size:22px">≤ 3 THREADS LONG: NOT GO MUST NOT PASS THROUGH</text>''',
       cta=True, cta_t=1.6),
 ])
 
