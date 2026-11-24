@@ -57,23 +57,23 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 | ID | Topic | Status | Length | Hook | CTA | Spec |
 |---|---|---|---|---|---|---|
 | 39 | Proving out a new program (Haas mill example) | live – 19 Nov 2026 09:00:27 IST · [permalink](https://www.instagram.com/reel/Df6Hk2BitOI/) (approved caption matched) | 28.6 s | cold-open demo | SAVE | batchL.py |
-| 40 | Running an outdated program: drawing rev vs program rev | approved 19 Nov – vidIQ scheduled 19 Nov 2026 19:30 IST | 28.2 s | countdown quiz | SEND | batchL.py |
-| 41 | Clearance hole for an M8 bolt (ISO 273: 8.4 / 9 / 10 mm) | approved 19 Nov – vidIQ scheduled 20 Nov 2026 09:00 IST · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchM.py |
-| 42 | Dial test indicator cosine error (30° → × 0.87, Mitutoyo DTI manual) | approved 19 Nov – vidIQ scheduled 20 Nov 2026 19:30 IST · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchM.py |
+| 40 | Running an outdated program: drawing rev vs program rev | live – 19 Nov 2026 19:30:34 IST · [permalink](https://www.instagram.com/reel/Df7Pr_SEgQJ/) (approved caption matched) | 28.2 s | countdown quiz | SEND | batchL.py |
+| 41 | Clearance hole for an M8 bolt (ISO 273: 8.4 / 9 / 10 mm) | live – 20 Nov 2026 09:00:33 IST · [permalink](https://www.instagram.com/reel/Df8sX3Ygs02/) (approved caption matched) · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchM.py |
+| 42 | Dial test indicator cosine error (30° → × 0.87, Mitutoyo DTI manual) | live – 20 Nov 2026 19:31:31 IST · [permalink](https://www.instagram.com/reel/Df90kT9CbkV/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchM.py |
+| 43 | Reaming stock allowance: Ø10 reamer → Ø9.8 drill (Sandvik P1 table, 0.2 mm) | live – 22 Nov 2026 09:00:28 IST · [permalink](https://www.instagram.com/reel/DgB19d1DNvd/) (approved caption matched) · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchN.py |
+| 44 | Caliper: measure close to the beam (Abbe's principle, Mitutoyo 0.008 mm example) | live – 22 Nov 2026 19:31:48 IST · [permalink](https://www.instagram.com/reel/DgC-N0qlc0y/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchN.py |
+| 46 | Blind-hole tapping: drill ≥ thread + chamfer + 1 pitch (Kennametal Tech Tip #65; M8 × 1.25 → 17 mm) | live – 23 Nov 2026 19:31:33 IST · [permalink](https://www.instagram.com/reel/DgFi-exmfsb/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SEND | batchO.py |
 
 Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from the vidIQ-hosted copies). Add them unchanged when the bytes are available.
 
 ## Drafts awaiting approval (proposed slots IST)
-None at present. (Reels 41–42 were the 19 Nov 07:07 run's versions; approved and scheduled, see above.)
+| ID | Topic | Status | Length | Hook | CTA | Spec |
+|---|---|---|---|---|---|---|
+| 45 | Thread plug gauge GO / NOT GO: GO full length, NOT GO ≤ 2 turns at each accessible end, short-thread rule, minor Ø checked separately (ISO 1502:1996) | draft rev 3 (23 Nov audit corrections) – proposed 25 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | interview question | SAVE | batchO.py |
+| 47 | ISO material groups P M K N S H and colour codes (ISO 513:2012; K = cast iron, red; K10 vs K30 within the K01–K40 range) | draft rev 2 (23 Nov audit corrections) – proposed 25 Nov 2026 19:30 IST · private vidIQ draft | 28.2 s | countdown quiz | SAVE | batchP.py |
 
-## Queue – 21 to 28 Nov 2026 (two a day, 09:00 and 19:30 IST)
-Take topics in this order; IDs are assigned when produced (next is 43). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
-- 21 Nov 09:00 · Reaming allowance: don't drill to reamer size; leave the maker's stock (e.g. Ø0.2 mm up to Ø10); too little stock → rubbing, undersize · wrong vs right · SAVE · Sandvik Coromant reaming guidance + reamer maker's stock table
-- 21 Nov 19:30 · Caliper: measure close to the beam, not at the jaw tips (Abbe's principle) · cold-open demo · SAVE · Mitutoyo Quick Guide to Precision Measuring Instruments
-- 22 Nov 09:00 · Setting Z with a gauge block: subtract the block height (Haas mill example) · wrong vs right · SAVE · Haas mill operator's manual
-- 22 Nov 19:30 · Thread plug gauge GO / NOT GO: GO runs the full length; NOT GO no more than two turns (ISO metric) · interview question · SAVE · ISO 1502 / gauge maker's instructions
-- 23 Nov 09:00 · Blind-hole tapping: drill deeper than the thread (full thread + tap chamfer + at least one pitch) · cold-open demo · SEND · Kennametal tapping tech tip / OSG tap technical data
-- 23 Nov 19:30 · ISO material groups P M K N S H and their colour codes · countdown quiz · SAVE · ISO 513 / Sandvik Coromant (confirm colours; makers differ for S and H)
+## Queue – from 26 Nov 2026 (two a day, 09:00 and 19:30 IST)
+Take topics in this order; IDs are assigned when produced (next is 48). Slot dates below are targets and now run about a day later than written (45 rev 3 and 47 rev 2 re-slotted to 25 Nov after the 23 Nov audit; 24 Nov slots unused). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
 - 24 Nov 09:00 · Bore gauge: zero on the setting ring and read at the turning point while rocking (smallest diameter) · cold-open demo · SAVE · Mitutoyo bore gauge instructions (Mitutoyo calls it the highest displayed value – word it carefully)
 - 24 Nov 19:30 · G28 Z0 vs G91 G28 Z0: the intermediate point (label by control) · wrong vs right · SEND · Haas G28 code reference
 - 25 Nov 09:00 · Spot drill angle equal to or slightly larger than the drill point angle (e.g. 118° drill → 120° spot) · countdown quiz · SAVE · ISCAR drilling handbook / drill maker
@@ -85,4 +85,4 @@ Take topics in this order; IDs are assigned when produced (next is 43). Each lin
 - 28 Nov 09:00 · 25–50 mm micrometer: zero check reads 25.000 on the setting standard, not 0.000 · wrong vs right · SAVE · Mitutoyo micrometer instructions
 - 28 Nov 19:30 · Recap quiz: tap drill size (D − P), dial indicator reading, vernier reading · countdown quiz · SAVE · sources of Reels 31, 20 and 19
 
-Later: probing a work offset in detail (cycle updates or only reports, by system – Renishaw / Haas probing docs); builder-specific M-codes (beyond common M-codes, check the manual).
+Later: setting Z with a gauge block – subtract the block height (Haas mill example) · wrong vs right · SAVE · Haas mill operator's manual + Setting 64 (deferred 22 Nov: Haas manual pages could not be read from the producer session, so the Haas-specific offset steps were not verified; produce when they can be). Probing a work offset in detail (cycle updates or only reports, by system – Renishaw / Haas probing docs); builder-specific M-codes (beyond common M-codes, check the manual).
