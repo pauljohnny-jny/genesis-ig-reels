@@ -62,18 +62,18 @@ Recovery source base: `https://raw.githubusercontent.com/pauljohnny-jny/genesis-
 | 42 | Dial test indicator cosine error (30° → × 0.87, Mitutoyo DTI manual) | live – 20 Nov 2026 19:31:31 IST · [permalink](https://www.instagram.com/reel/Df90kT9CbkV/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchM.py |
 | 43 | Reaming stock allowance: Ø10 reamer → Ø9.8 drill (Sandvik P1 table, 0.2 mm) | live – 22 Nov 2026 09:00:28 IST · [permalink](https://www.instagram.com/reel/DgB19d1DNvd/) (approved caption matched) · MP4 in reels/ | 28.2 s | wrong vs right | SAVE | batchN.py |
 | 44 | Caliper: measure close to the beam (Abbe's principle, Mitutoyo 0.008 mm example) | live – 22 Nov 2026 19:31:48 IST · [permalink](https://www.instagram.com/reel/DgC-N0qlc0y/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SAVE | batchN.py |
-| 46 | Blind-hole tapping: drill ≥ thread + chamfer + 1 pitch (Kennametal Tech Tip #65; M8 × 1.25 → 17 mm) | approved 23 Nov (exact version, delegated review) – vidIQ scheduled 23 Nov 2026 19:30 IST (pending, not live) · MP4 in reels/ | 28.2 s | cold-open demo | SEND | batchO.py |
+| 46 | Blind-hole tapping: drill ≥ thread + chamfer + 1 pitch (Kennametal Tech Tip #65; M8 × 1.25 → 17 mm) | live – 23 Nov 2026 19:31:33 IST · [permalink](https://www.instagram.com/reel/DgFi-exmfsb/) (approved caption matched) · MP4 in reels/ | 28.2 s | cold-open demo | SEND | batchO.py |
 
 Open item: the approved MP4s for 39–40 are not yet in `reels/` (scheduled from the vidIQ-hosted copies). Add them unchanged when the bytes are available.
 
 ## Drafts awaiting approval (proposed slots IST)
 | ID | Topic | Status | Length | Hook | CTA | Spec |
 |---|---|---|---|---|---|---|
-| 45 | Thread plug gauge GO / NOT GO: GO full length, NOT GO ≤ 2 turns, short-thread rule (ISO 1502:1996) | draft rev 2 (audit corrections) – proposed 24 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | interview question | SAVE | batchO.py |
-| 47 | ISO material groups P M K N S H and colour codes (ISO 513:2012; K = cast iron, red) | draft – proposed 24 Nov 2026 19:30 IST · private vidIQ draft | 28.2 s | countdown quiz | SAVE | batchP.py |
+| 45 | Thread plug gauge GO / NOT GO: GO full length, NOT GO ≤ 2 turns at each accessible end, short-thread rule, minor Ø checked separately (ISO 1502:1996) | draft rev 3 (23 Nov audit corrections) – proposed 25 Nov 2026 09:00 IST · private vidIQ draft | 28.2 s | interview question | SAVE | batchO.py |
+| 47 | ISO material groups P M K N S H and colour codes (ISO 513:2012; K = cast iron, red; K10 vs K30 within the K01–K40 range) | draft rev 2 (23 Nov audit corrections) – proposed 25 Nov 2026 19:30 IST · private vidIQ draft | 28.2 s | countdown quiz | SAVE | batchP.py |
 
-## Queue – from 25 Nov 2026 (two a day, 09:00 and 19:30 IST)
-Take topics in this order; IDs are assigned when produced (next is 48). Slot dates below are targets and now run about a day later than written (45 rev 2 and 47 drafted for 24 Nov). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
+## Queue – from 26 Nov 2026 (two a day, 09:00 and 19:30 IST)
+Take topics in this order; IDs are assigned when produced (next is 48). Slot dates below are targets and now run about a day later than written (45 rev 3 and 47 rev 2 re-slotted to 25 Nov after the 23 Nov audit; 24 Nov slots unused). Each line: target slot · topic and angle · hook · CTA · source to verify against. The producer verifies every teaching point at production (Hard rule 4); if a point can't be verified, simplify it or take the next topic and say why. Order avoids two of the same hook or subject back to back.
 - 24 Nov 09:00 · Bore gauge: zero on the setting ring and read at the turning point while rocking (smallest diameter) · cold-open demo · SAVE · Mitutoyo bore gauge instructions (Mitutoyo calls it the highest displayed value – word it carefully)
 - 24 Nov 19:30 · G28 Z0 vs G91 G28 Z0: the intermediate point (label by control) · wrong vs right · SEND · Haas G28 code reference
 - 25 Nov 09:00 · Spot drill angle equal to or slightly larger than the drill point angle (e.g. 118° drill → 120° spot) · countdown quiz · SAVE · ISCAR drilling handbook / drill maker

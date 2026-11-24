@@ -53,6 +53,11 @@ def plug_gauge(cx, top, go_h=120, hd_h=140, ng_h=80, w=84):
 #   turns of thread are determined when withdrawing the gauge" – and "shall not pass completely through a workpiece with a
 #   length of thread of three threads or less"; 7.2.2 b) NOT GO checked regularly for wear. Added the short-thread rule and
 #   withdrawal counting; replaced "BOTH PASS"; removed the inch aside.
+# REV 3 (24 Nov 2026, after ChatGPT CHANGES REQUIRED on rev 0ddd57eb): re-read ISO 1502:1996 sample 24 Nov: 7.2.2 c) as above;
+#   7.2.3 "The minor diameter of a thread is checked by means of plain cylindrical GO and NOT GO plug gauges". Recap now
+#   "GO FULL LENGTH + NOT GO WITHIN LIMIT -> SCREW-PLUG CHECKS PASS" with the <= 3 threads rule and "minor Ø: separate plain
+#   plug check" visible; "each end" -> "each accessible end" (a blind hole has one); dropped the incomplete-first-threads
+#   rationale (not ISO's stated reason).
 #   Secondary: Thread Check Inc. (gauge maker) in Quality Magazine "Internal part thread inspection": metric No-Go plug may
 #     enter up to two turns; inch (ASME B1.2) up to three – so the reel states "ISO METRIC".
 R45_H = dict(hook="NOT GO: எத்தனை turns?", hsize=58, hook2="Interview கேள்வி · ISO metric", h2size=44, s=0, e=4.2, svg=f'''
@@ -77,7 +82,7 @@ R45 = dict(id="45", slug="Thread_Plug_Gauge_GO_NOT_GO", scenes=[
 <text x="66" y="156" style="font:700 27px Inter" fill="#fff">ENTERS WHOLE THREAD LENGTH</text></g>
 <g class="a" data-t="0.8">{box(40, 194, 698, 160, RED, 3)}
 <text x="66" y="240" style="font:800 32px Inter" fill="{RED}">NOT GO END</text>
-<text x="66" y="286" style="font:700 27px Inter" fill="#fff">MAX 2 TURNS · EACH END</text>
+<text x="66" y="286" style="font:700 27px Inter" fill="#fff">MAX 2 TURNS · EACH ACCESSIBLE END</text>
 <text x="66" y="328" style="font:600 23px Plex" fill="#BFD6E8">TURNS COUNTED ON WITHDRAWAL</text></g>
 <g class="a" data-t="1.3">{box(40, 366, 698, 96, OR, 3)}
 <text x="66" y="406" style="font:700 24px Inter" fill="{OR}">SHORT THREAD (≤ 3 THREADS):</text>
@@ -86,30 +91,32 @@ R45 = dict(id="45", slug="Thread_Plug_Gauge_GO_NOT_GO", scenes=[
       body="ISO 1502: கையால், அதிக force இல்லாமல்.", body_t=1.5),
  dict(s=10.2, e=16.4, tag="WHY  /  03", title="Two limits", tsize=80, sub="GO = min · NOT GO = max", ssize=48,
       svg=fig("WHAT EACH END CHECKS", "ISO 1502", orange=True) + f'''
-<g class="a" data-t="0.2">{box(40, 66, 698, 150, GRN, 3)}
-<text x="66" y="116" style="font:800 30px Inter" fill="{GRN}">GO</text>
-<text x="160" y="116" style="font:700 28px Inter" fill="#fff">MIN PITCH Ø (VIRTUAL)</text>
-<text x="160" y="160" style="font:700 28px Inter" fill="#fff">+ MIN MAJOR Ø</text>
-<text x="160" y="198" style="font:600 22px Plex" fill="#BFD6E8">NOT THE MINOR Ø</text></g>
-<g class="a" data-t="0.8">{box(40, 236, 698, 110, RED, 3)}
-<text x="66" y="300" style="font:800 30px Inter" fill="{RED}">NOT GO</text>
-<text x="210" y="300" style="font:700 28px Inter" fill="#fff">MAX PITCH Ø (ACTUAL)</text></g>
-<g class="a" data-t="1.3">{box(40, 366, 698, 120, OR, 3)}
-<text x="389" y="412" text-anchor="middle" style="font:700 25px Inter" fill="#fff">GO GOES THROUGH + NOT GO ≤ 2 TURNS</text>
-<text x="389" y="456" text-anchor="middle" style="font:800 28px Inter" fill="{OR}">→ THREAD IN LIMITS</text></g>''',
-      body="2 turns ஏன்? முதல் threads முழுமையாக இருக்காது.", body_t=1.7),
+<g class="a" data-t="0.2">{box(40, 62, 698, 110, GRN, 3)}
+<text x="66" y="106" style="font:800 30px Inter" fill="{GRN}">GO</text>
+<text x="160" y="106" style="font:700 27px Inter" fill="#fff">MIN PITCH Ø (VIRTUAL)</text>
+<text x="160" y="150" style="font:700 27px Inter" fill="#fff">+ MIN MAJOR Ø</text></g>
+<g class="a" data-t="0.7">{box(40, 184, 698, 72, RED, 3)}
+<text x="66" y="231" style="font:800 30px Inter" fill="{RED}">NOT GO</text>
+<text x="210" y="231" style="font:700 27px Inter" fill="#fff">MAX PITCH Ø (ACTUAL)</text></g>
+<g class="a" data-t="1.2">{box(40, 268, 698, 212, OR, 3)}
+<text x="66" y="310" style="font:700 24px Inter" fill="#fff">GO FULL LENGTH + NOT GO WITHIN LIMIT</text>
+<text x="66" y="352" style="font:800 27px Inter" fill="{OR}">→ SCREW-PLUG CHECKS PASS</text>
+<text x="66" y="404" style="font:600 22px Plex" fill="#BFD6E8">≤ 3 THREADS LONG: NO PASS-THROUGH</text>
+<text x="66" y="450" style="font:600 22px Plex" fill="#BFD6E8">MINOR Ø: SEPARATE PLAIN PLUG CHECK</text></g>''',
+      body="Minor Ø-க்கு தனி plain plug gauge.", body_t=1.7),
  dict(s=16.4, e=22.6, tag="CHECK  /  04", title="Gauge it right", tsize=80, sub="மூன்று பழக்கம்.", ssize=50,
       svg=fig("THREAD PLUG GAUGE") + '<path d="M30 190H748M30 330H748" stroke="#2E5878" stroke-width="2"/>'
           + checkrow(115, 1, "BY HAND, NO FORCE", "Wrench, அதிக force வேண்டாம்", 0.2)
           + checkrow(255, 2, "GO: FULL LENGTH", "முழு thread நீளமும் போக வேண்டும்", 0.7)
-          + checkrow(395, 3, "NOT GO: BOTH ENDS", "ஒவ்வொரு பக்கமும் ≤ 2 turns", 1.2),
+          + checkrow(395, 3, "NOT GO: EACH ACCESSIBLE END", "ஒவ்வொரு முனையிலும் ≤ 2 turns", 1.2),
       body="Gauge-களை wear-க்கு regular-ஆக check செய்யுங்கள்.", body_t=1.7),
  dict(s=22.6, e=28.2, tag="REMEMBER  /  05", title="Interview answer", tsize=72, sub="NOT GO: 2 turns வரை மட்டும்.", ssize=44,
       svg=fig("HOW TO ANSWER") + chip(40, 66, 330, "GO: FULL LENGTH", 0.1, GRN, GRN) + chip(388, 66, 350, "NOT GO ≤ 2 TURNS", 0.25, RED, RED)
           + chip(40, 150, 698, "ISO 1502 · METRIC INTERNAL THREAD", 0.4) + '''
 <text class="w a" data-t="0.8" x="40" y="300" style="font-size:30px">"GO முழுதும் கையால் போக வேண்டும்;</text>
 <text class="w a" data-t="0.8" x="40" y="346" style="font-size:30px"> NOT GO 2 turns-க்கு மேல் போனால் reject."</text>
-<text class="m a" data-t="1.2" x="40" y="440" style="font-size:22px">≤ 3 THREADS LONG: NOT GO MUST NOT PASS THROUGH</text>''',
+<text class="m a" data-t="1.2" x="40" y="420" style="font-size:22px">EACH ACCESSIBLE END · COUNT ON WITHDRAWAL</text>
+<text class="m a" data-t="1.2" x="40" y="456" style="font-size:22px">≤ 3 THREADS LONG: NOT GO MUST NOT PASS THROUGH</text>''',
       cta=True, cta_t=1.6),
 ])
 

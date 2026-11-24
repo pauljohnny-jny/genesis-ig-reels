@@ -42,11 +42,15 @@ def grp_row(y, letter, col, name, eg, t, ink=PANEL):
 #   cutting material" (Table 6: wear resistance ← 01 … 50 → toughness).
 #   Maker difference: Dormer Pramet "Workpiece material groups" page (dormerpramet.com/se/en/WMG): "Orange: High-temperature
 #   alloys (S-group)" – so the reel tells viewers to trust the letter, not only the colour.
+# REV 2 (24 Nov 2026, after ChatGPT CHANGES REQUIRED on rev 4a218da3): re-read ISO 513:2012 Table 5 on 24 Nov – application
+#   ranges P01–P50, M01–M40, K01–K40, N01–N30, S01–S30, H01–H30; arrows a (speed / wear resistance) and b (feed / toughness)
+#   within each group. Hook label "GRADE AREA" -> "ISO APPLICATION RANGE"; WHY card now a K-only K01–K40 scale with K10 vs K30,
+#   scoped "within one group" and "same code ≠ same maker grade".
 #   On-screen colours are schematic tints; group names shortened (full scope in caption).
 H47 = dict(hook="K = எந்த material?", hsize=82, hook2="3…2…1 · ISO 513 code", h2size=50, s=0, e=4.2, svg=f'''
 <text class="fig" x="24" y="44">INSERT BOX LABEL · EXAMPLE</text><text class="fig" x="754" y="44" text-anchor="end" style="fill:{OR}">ISO 513</text>
 <g class="move" data-t="0" data-d="1.2" data-dx="0" data-dy="-12">{box(214, 70, 350, 120, OR, 3)}
-<text x="389" y="122" text-anchor="middle" style="font:600 24px Plex" fill="#BFD6E8">GRADE AREA</text>
+<text x="389" y="122" text-anchor="middle" style="font:600 24px Plex" fill="#BFD6E8">ISO APPLICATION RANGE</text>
 <text x="389" y="172" text-anchor="middle" style="font:800 50px Inter" fill="{OR}">K10 – K20</text></g>
 <circle class="until" data-end="3.0" cx="389" cy="330" r="96" fill="none" stroke="#2E5878" stroke-width="16"/>
 <circle class="draw" data-t="0" data-d="3.0" data-lin="1" data-hide="1" pathLength="1" cx="389" cy="330" r="96" fill="none" stroke="{OR}" stroke-width="16" transform="rotate(-90 389 330)"/>
@@ -70,29 +74,31 @@ R47 = dict(id="47", slug="ISO_Material_Groups_PMKNSH", scenes=[
           + f'<rect class="a" data-t="1.6" x="36" y="204" width="706" height="70" rx="14" fill="none" stroke="{OR}" stroke-width="4"/>',
       body="Letter = வெட்டப்படும் workpiece material.", body_t=1.8),
  dict(s=11.2, e=17.0, tag="WHY  /  03", title="The number", tsize=80, sub="K10 vs K30: என்ன வித்தியாசம்?", ssize=40,
-      svg=fig("ISO 513 · AREA OF USE", "SCHEMATIC", orange=True) + f'''
+      svg=fig("ISO 513 · K APPLICATION RANGE", "SCHEMATIC", orange=True) + f'''
 <g class="a" data-t="0.2">{box(40, 70, 698, 70)}
-<text x="66" y="117" style="font:800 30px Inter" fill="#fff">01</text>
-<text x="389" y="117" text-anchor="middle" style="font:700 26px Inter" fill="#BFD6E8">GROUP NUMBER</text>
-<text x="712" y="117" text-anchor="end" style="font:800 30px Inter" fill="#fff">50</text></g>
+<text x="66" y="117" style="font:800 30px Inter" fill="#fff">K01</text>
+<text x="389" y="117" text-anchor="middle" style="font:700 24px Inter" fill="#BFD6E8">CAST IRON GROUP</text>
+<text x="712" y="117" text-anchor="end" style="font:800 30px Inter" fill="#fff">K40</text></g>
 <g class="a" data-t="0.4"><rect x="40" y="160" width="698" height="26" rx="13" fill="#2E5878"/>
-<rect class="grow" data-t="0.4" data-d="1.2" data-w="698" x="40" y="160" width="0" height="26" rx="13" fill="{OR}"/></g>
+<rect class="grow" data-t="0.4" data-d="1.2" data-w="698" x="40" y="160" width="0" height="26" rx="13" fill="{OR}"/>
+<path d="M201 150V196M559 150V196" stroke="#fff" stroke-width="4"/></g>
 <g class="a" data-t="0.9">{box(40, 214, 336, 200, GRN, 3)}
-<text x="208" y="262" text-anchor="middle" style="font:800 30px Inter" fill="{GRN}">LOW NUMBER</text>
+<text x="208" y="262" text-anchor="middle" style="font:800 34px Inter" fill="{GRN}">K10</text>
 <text x="208" y="312" text-anchor="middle" style="font:700 25px Inter" fill="#fff">MORE WEAR</text>
 <text x="208" y="346" text-anchor="middle" style="font:700 25px Inter" fill="#fff">RESISTANCE</text>
 <text x="208" y="392" text-anchor="middle" style="font:600 22px Plex" fill="#BFD6E8">HIGHER SPEED</text></g>
 <g class="a" data-t="1.3">{box(402, 214, 336, 200, OR, 3)}
-<text x="570" y="262" text-anchor="middle" style="font:800 30px Inter" fill="{OR}">HIGH NUMBER</text>
+<text x="570" y="262" text-anchor="middle" style="font:800 34px Inter" fill="{OR}">K30</text>
 <text x="570" y="312" text-anchor="middle" style="font:700 25px Inter" fill="#fff">MORE</text>
 <text x="570" y="346" text-anchor="middle" style="font:700 25px Inter" fill="#fff">TOUGHNESS</text>
 <text x="570" y="392" text-anchor="middle" style="font:600 22px Plex" fill="#BFD6E8">HIGHER FEED</text></g>
-<text class="m a" data-t="1.6" x="389" y="466" text-anchor="middle" style="font-size:21px">ISO 513 FOOTNOTES a / b · TABLE 6</text>''',
-      body="சிறிய எண் = wear resistance; பெரிய எண் = toughness.", body_t=1.8),
+<text class="m a" data-t="1.6" x="389" y="450" text-anchor="middle" style="font-size:20px">WITHIN ONE GROUP · ISO 513 TABLES 5–6</text>
+<text class="m a" data-t="1.6" x="389" y="482" text-anchor="middle" style="font-size:20px">SAME CODE ≠ SAME MAKER GRADE</text>''',
+      body="ஒரே group-க்குள்: சிறிய எண் wear, பெரிய எண் toughness.", body_t=1.8),
  dict(s=17.0, e=22.8, tag="CHECK  /  04", title="Read the box", tsize=80, sub="மூன்று check.", ssize=50,
       svg=fig("INSERT BOX") + '<path d="M30 190H748M30 330H748" stroke="#2E5878" stroke-width="2"/>'
           + checkrow(115, 1, "LETTER = MATERIAL", "Job material-உடன் ஒப்பிடுங்கள்", 0.2)
-          + checkrow(255, 2, "NUMBER = AREA OF USE", "Low: wear · High: toughness", 0.7)
+          + checkrow(255, 2, "NUMBER = APPLICATION", "ஒரே group-க்குள் மட்டும் ஒப்பிடுங்கள்", 0.7)
           + checkrow(395, 3, "TRUST THE LETTER", "S colour: ISO brown, சில maker orange", 1.2),
       body="Grade தேர்வு tool maker catalogue-படி.", body_t=1.7),
  dict(s=22.8, e=28.2, tag="REMEMBER  /  05", title="Interview answer", tsize=72, sub="K = cast iron · red.", ssize=48,
