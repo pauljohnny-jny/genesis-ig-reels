@@ -1,0 +1,7 @@
+Drill 12, thread 12? Blind hole tapping-க்கு drill எவ்வளவு ஆழம் வேண்டும்.
+
+Kennametal Tech Tip #65-படி blind hole-ல்: drill depth ≥ full thread length + tap chamfer length + 1 pitch. உதாரணம் M8 × 1.25, full thread 12 mm, 3-thread chamfer: 12 + (3 × 1.25) + 1.25 = 12 + 3.75 + 1.25 = 17 mm. Tap-ன் chamfer threads tapered, அவை full thread வெட்டாது; கூடுதல் 1 pitch spindle over-spin மற்றும் chips-க்கு இடம் தரும். Kennametal-படி நீளமான chamfer tap life-ஐ அதிகரிக்கும் – drill depth அனுமதிக்கும் அளவுக்கு. Assumptions: cut tap, metric coarse thread; depth = full drill Ø வரை, drill point கூடுதல்; chamfer threads உங்கள் tap catalogue-ல் பாருங்கள்; reel drawing schematic. VMC operator-கள் drill depth-ஐ drawing-ல் உள்ள thread depth-உடன் ஒப்பிடுங்கள்.
+
+இதை உங்கள் VMC நண்பருக்கு அனுப்புங்கள்.
+
+#VMCOperator #Tapping #CNCMachining
